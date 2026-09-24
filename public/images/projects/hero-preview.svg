@@ -1,0 +1,128 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Window Container -->
+  <rect width="1200" height="780" rx="16" fill="#FFFFFF"/>
+  <rect x="0.5" y="0.5" width="1199" height="779" rx="15.5" stroke="#EAECF0"/>
+  
+  <!-- Browser Chrome / Top Bar -->
+  <rect width="1200" height="52" rx="16 16 0 0" fill="#F9FAFB"/>
+  <line x1="0" y1="52" x2="1200" y2="52" stroke="#EAECF0"/>
+  
+  <!-- Window Dots -->
+  <circle cx="28" cy="26" r="6" fill="#F04438"/>
+  <circle cx="48" cy="26" r="6" fill="#F79009"/>
+  <circle cx="68" cy="26" r="6" fill="#12B76A"/>
+  
+  <!-- Address Bar -->
+  <rect x="110" y="12" width="600" height="28" rx="6" fill="#FFFFFF" stroke="#EAECF0"/>
+  <circle cx="126" cy="26" r="4" fill="#98A2B3"/>
+  <text x="142" y="30" font-family="system-ui, sans-serif" font-size="12" fill="#475467">https://app.duydev.vn/workplace/dashboard</text>
+  
+  <!-- Top App Navigation -->
+  <rect x="0" y="52" width="1200" height="64" fill="#FFFFFF"/>
+  <line x1="0" y1="116" x2="1200" y2="116" stroke="#EAECF0"/>
+  
+  <rect x="36" y="70" width="32" height="32" rx="8" fill="#465FFF"/>
+  <path d="M46 78L58 86L46 94" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="91" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#101828">Product Studio</text>
+  
+  <rect x="220" y="72" width="80" height="28" rx="6" fill="#EEF2FF"/>
+  <text x="238" y="90" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#465FFF">Tổng quan</text>
+  <text x="330" y="90" font-family="system-ui, sans-serif" font-size="13" fill="#667085">Dự án</text>
+  <text x="400" y="90" font-family="system-ui, sans-serif" font-size="13" fill="#667085">Tiến độ</text>
+  <text x="470" y="90" font-family="system-ui, sans-serif" font-size="13" fill="#667085">Báo cáo</text>
+  
+  <!-- Active User Badge -->
+  <rect x="1050" y="68" width="114" height="34" rx="8" fill="#F9FAFB" stroke="#EAECF0"/>
+  <circle cx="1070" cy="85" r="10" fill="#465FFF"/>
+  <text x="1066" y="89" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">D</text>
+  <text x="1090" y="89" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#344054">DuyDev</text>
+  
+  <!-- Main Content Area -->
+  <rect x="0" y="116" width="1200" height="664" fill="#F9FAFB"/>
+  
+  <!-- Section Header -->
+  <text x="36" y="156" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#101828">Tổng quan tiến độ phát triển</text>
+  <text x="36" y="178" font-family="system-ui, sans-serif" font-size="13" fill="#667085">Theo dõi luồng công việc, module nghiệp vụ và thời gian bàn giao thực tế.</text>
+  
+  <!-- 3 Metric Cards -->
+  <g transform="translate(36, 196)">
+    <!-- Card 1 -->
+    <rect width="360" height="110" rx="12" fill="#FFFFFF" stroke="#EAECF0"/>
+    <text x="24" y="36" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#667085">Dự án đang triển khai</text>
+    <text x="24" y="74" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#101828">04 Sản phẩm</text>
+    <rect x="250" y="24" width="86" height="24" rx="12" fill="#ECFDF3"/>
+    <text x="264" y="40" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#027A48">Đúng tiến độ</text>
+  </g>
+  
+  <g transform="translate(420, 196)">
+    <!-- Card 2 -->
+    <rect width="360" height="110" rx="12" fill="#FFFFFF" stroke="#EAECF0"/>
+    <text x="24" y="36" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#667085">Tỷ lệ hoàn thành module</text>
+    <text x="24" y="74" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#465FFF">94.8%</text>
+    <rect x="24" y="86" width="312" height="6" rx="3" fill="#F2F4F7"/>
+    <rect x="24" y="86" width="295" height="6" rx="3" fill="#465FFF"/>
+  </g>
+  
+  <g transform="translate(804, 196)">
+    <!-- Card 3 -->
+    <rect width="360" height="110" rx="12" fill="#FFFFFF" stroke="#EAECF0"/>
+    <text x="24" y="36" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#667085">Kiến trúc công nghệ</text>
+    <text x="24" y="74" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#101828">Next.js &amp; .NET</text>
+    <rect x="250" y="24" width="86" height="24" rx="12" fill="#EEF2FF"/>
+    <text x="265" y="40" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#465FFF">Tối ưu chuẩn</text>
+  </g>
+  
+  <!-- Large Table Panel -->
+  <g transform="translate(36, 330)">
+    <rect width="1128" height="410" rx="12" fill="#FFFFFF" stroke="#EAECF0"/>
+    
+    <!-- Table Header Bar -->
+    <rect width="1128" height="52" rx="12 12 0 0" fill="#F9FAFB"/>
+    <line x1="0" y1="52" x2="1128" y2="52" stroke="#EAECF0"/>
+    
+    <text x="24" y="31" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#475467">TÊN DỰ ÁN &amp; PHẠM VI</text>
+    <text x="360" y="31" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#475467">DANH MỤC</text>
+    <text x="560" y="31" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#475467">CÔNG NGHỆ CHÍNH</text>
+    <text x="820" y="31" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#475467">TRẠNG THÁI</text>
+    <text x="1000" y="31" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#475467">THAO TÁC</text>
+    
+    <!-- Row 1 -->
+    <line x1="0" y1="120" x2="1128" y2="120" stroke="#F2F4F7"/>
+    <text x="24" y="80" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#101828">Zhonglish — Learning Platform</text>
+    <text x="24" y="98" font-family="system-ui, sans-serif" font-size="12" fill="#667085">Hệ thống bài học, tính điểm XP và Supabase Auth</text>
+    <text x="360" y="88" font-family="system-ui, sans-serif" font-size="13" fill="#344054">Web Application</text>
+    <text x="560" y="88" font-family="system-ui, sans-serif" font-size="13" fill="#344054">Next.js, Supabase, TS</text>
+    <rect x="820" y="72" width="94" height="24" rx="12" fill="#ECFDF3"/>
+    <text x="836" y="88" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#027A48">Hoàn thành</text>
+    <text x="1000" y="88" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#465FFF">Xem chi tiết →</text>
+    
+    <!-- Row 2 -->
+    <line x1="0" y1="190" x2="1128" y2="190" stroke="#F2F4F7"/>
+    <text x="24" y="150" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#101828">Collaborative Excel</text>
+    <text x="24" y="168" font-family="system-ui, sans-serif" font-size="12" fill="#667085">Công cụ cộng tác và xử lý dữ liệu nghiệp vụ thời gian thực</text>
+    <text x="360" y="158" font-family="system-ui, sans-serif" font-size="13" fill="#344054">Business Tool</text>
+    <text x="560" y="158" font-family="system-ui, sans-serif" font-size="13" fill="#344054">React, WebSockets</text>
+    <rect x="820" y="142" width="94" height="24" rx="12" fill="#ECFDF3"/>
+    <text x="836" y="158" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#027A48">Hoàn thành</text>
+    <text x="1000" y="158" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#465FFF">Xem chi tiết →</text>
+    
+    <!-- Row 3 -->
+    <line x1="0" y1="260" x2="1128" y2="260" stroke="#F2F4F7"/>
+    <text x="24" y="220" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#101828">Attendance Management System</text>
+    <text x="24" y="238" font-family="system-ui, sans-serif" font-size="12" fill="#667085">Hệ thống quản lý chấm công &amp; quy trình nội bộ doanh nghiệp</text>
+    <text x="360" y="228" font-family="system-ui, sans-serif" font-size="13" fill="#344054">Enterprise Software</text>
+    <text x="560" y="228" font-family="system-ui, sans-serif" font-size="13" fill="#344054">ASP.NET Core, SQL Server</text>
+    <rect x="820" y="212" width="94" height="24" rx="12" fill="#ECFDF3"/>
+    <text x="836" y="228" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#027A48">Hoàn thành</text>
+    <text x="1000" y="228" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#465FFF">Xem chi tiết →</text>
+    
+    <!-- Row 4 -->
+    <text x="24" y="290" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#101828">OCR &amp; AI Document Processor</text>
+    <text x="24" y="308" font-family="system-ui, sans-serif" font-size="12" fill="#667085">Trích xuất tự động thông tin chứng từ hóa đơn kế toán</text>
+    <text x="360" y="298" font-family="system-ui, sans-serif" font-size="13" fill="#344054">AI &amp; Automation</text>
+    <text x="560" y="298" font-family="system-ui, sans-serif" font-size="13" fill="#344054">Python, Next.js, OpenAI</text>
+    <rect x="820" y="282" width="100" height="24" rx="12" fill="#EFF8FF"/>
+    <text x="836" y="298" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#175CD3">Đang thử nghiệm</text>
+    <text x="1000" y="298" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#465FFF">Xem chi tiết →</text>
+  </g>
+</svg>

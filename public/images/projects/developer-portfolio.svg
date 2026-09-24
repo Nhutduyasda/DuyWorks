@@ -1,0 +1,63 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="12" fill="#FFFFFF"/>
+  <rect x="0.5" y="0.5" width="799" height="499" rx="11.5" stroke="#EAECF0"/>
+  
+  <!-- Window Header -->
+  <rect width="800" height="42" rx="12 12 0 0" fill="#F9FAFB"/>
+  <line x1="0" y1="42" x2="800" y2="42" stroke="#EAECF0"/>
+  <circle cx="24" cy="21" r="5" fill="#F04438"/>
+  <circle cx="40" cy="21" r="5" fill="#F79009"/>
+  <circle cx="56" cy="21" r="5" fill="#12B76A"/>
+  <text x="76" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#344054">DuyDev — Technology Service Website &amp; Portfolio</text>
+  
+  <!-- App Body -->
+  <rect x="0" y="42" width="800" height="458" fill="#F9FAFB"/>
+  
+  <!-- Mini Header -->
+  <rect x="36" y="60" width="728" height="44" rx="8" fill="#FFFFFF" stroke="#EAECF0"/>
+  <circle cx="60" cy="82" r="8" fill="#465FFF"/>
+  <text x="76" y="86" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#101828">DuyDev</text>
+  <text x="440" y="86" font-family="system-ui, sans-serif" font-size="12" fill="#667085">Dịch vụ</text>
+  <text x="500" y="86" font-family="system-ui, sans-serif" font-size="12" fill="#667085">Dự án</text>
+  <text x="555" y="86" font-family="system-ui, sans-serif" font-size="12" fill="#667085">Giới thiệu</text>
+  <rect x="620" y="68" width="130" height="28" rx="6" fill="#465FFF"/>
+  <text x="640" y="86" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Trao đổi qua Zalo</text>
+  
+  <!-- Hero banner preview inside mockup -->
+  <rect x="36" y="118" width="728" height="150" rx="10" fill="#FFFFFF" stroke="#EAECF0"/>
+  <rect x="56" y="138" width="180" height="22" rx="4" fill="#EEF2FF"/>
+  <text x="64" y="153" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#465FFF">Website • Software • AI Solutions</text>
+  <text x="56" y="185" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#101828">Biến ý tưởng của bạn thành sản phẩm thực tế</text>
+  <text x="56" y="210" font-family="system-ui, sans-serif" font-size="12" fill="#475467">Thiết kế website, phần mềm quản lý và giải pháp AI phù hợp cho doanh nghiệp.</text>
+  
+  <rect x="56" y="226" width="130" height="28" rx="6" fill="#465FFF"/>
+  <text x="75" y="244" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Xem dự án đã làm</text>
+  
+  <!-- 3 Mini Service Cards -->
+  <g transform="translate(36, 284)">
+    <rect width="232" height="186" rx="8" fill="#FFFFFF" stroke="#EAECF0"/>
+    <rect x="16" y="16" width="28" height="28" rx="6" fill="#EEF2FF"/>
+    <text x="16" y="70" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#101828">Website &amp; Landing</text>
+    <text x="16" y="94" font-family="system-ui, sans-serif" font-size="11" fill="#667085">Trang web giới thiệu tối ưu tốc độ và chuẩn SEO.</text>
+    <rect x="16" y="146" width="90" height="20" rx="4" fill="#F2F4F7"/>
+    <text x="24" y="160" font-family="system-ui, sans-serif" font-size="10" fill="#344054">Responsive 100%</text>
+  </g>
+  
+  <g transform="translate(284, 284)">
+    <rect width="232" height="186" rx="8" fill="#FFFFFF" stroke="#EAECF0"/>
+    <rect x="16" y="16" width="28" height="28" rx="6" fill="#EEF2FF"/>
+    <text x="16" y="70" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#101828">Web Application</text>
+    <text x="16" y="94" font-family="system-ui, sans-serif" font-size="11" fill="#667085">Ứng dụng web có database và authentication.</text>
+    <rect x="16" y="146" width="90" height="20" rx="4" fill="#F2F4F7"/>
+    <text x="24" y="160" font-family="system-ui, sans-serif" font-size="10" fill="#344054">Database &amp; Auth</text>
+  </g>
+  
+  <g transform="translate(532, 284)">
+    <rect width="232" height="186" rx="8" fill="#FFFFFF" stroke="#EAECF0"/>
+    <rect x="16" y="16" width="28" height="28" rx="6" fill="#EEF2FF"/>
+    <text x="16" y="70" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#101828">AI &amp; Automation</text>
+    <text x="16" y="94" font-family="system-ui, sans-serif" font-size="11" fill="#667085">OCR, tích hợp AI và tự động hóa tác vụ lặp.</text>
+    <rect x="16" y="146" width="90" height="20" rx="4" fill="#F2F4F7"/>
+    <text x="24" y="160" font-family="system-ui, sans-serif" font-size="10" fill="#344054">AI Workflow</text>
+  </g>
+</svg>

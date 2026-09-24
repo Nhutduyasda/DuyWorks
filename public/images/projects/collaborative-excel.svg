@@ -1,0 +1,95 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="12" fill="#FFFFFF"/>
+  <rect x="0.5" y="0.5" width="799" height="499" rx="11.5" stroke="#EAECF0"/>
+  
+  <!-- Window Header -->
+  <rect width="800" height="42" rx="12 12 0 0" fill="#F9FAFB"/>
+  <line x1="0" y1="42" x2="800" y2="42" stroke="#EAECF0"/>
+  <circle cx="24" cy="21" r="5" fill="#F04438"/>
+  <circle cx="40" cy="21" r="5" fill="#F79009"/>
+  <circle cx="56" cy="21" r="5" fill="#12B76A"/>
+  <text x="76" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#344054">Collaborative Excel — Q3_Sales_Forecast.xlsx [Đang đồng bộ]</text>
+  
+  <!-- Online Collaborator Avatars -->
+  <circle cx="710" cy="21" r="12" fill="#465FFF"/>
+  <text x="706" y="25" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#FFFFFF">TD</text>
+  <circle cx="738" cy="21" r="12" fill="#12B76A"/>
+  <text x="734" y="25" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#FFFFFF">HA</text>
+  <circle cx="766" cy="21" r="12" fill="#F79009"/>
+  <text x="762" y="25" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#FFFFFF">ML</text>
+  
+  <!-- Toolbar & Formula Bar -->
+  <rect x="0" y="42" width="800" height="40" fill="#FFFFFF"/>
+  <line x1="0" y1="82" x2="800" y2="82" stroke="#EAECF0"/>
+  
+  <rect x="24" y="48" width="56" height="28" rx="6" fill="#F2F4F7"/>
+  <text x="38" y="66" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#344054">C4</text>
+  <text x="96" y="66" font-family="system-ui, sans-serif" font-size="13" font-style="italic" fill="#667085">fx</text>
+  <line x1="116" y1="52" x2="116" y2="72" stroke="#EAECF0"/>
+  <text x="130" y="66" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#101828">=SUM(C2:C3) * 1.15</text>
+  
+  <!-- Spreadsheet Grid -->
+  <rect x="0" y="82" width="800" height="418" fill="#FFFFFF"/>
+  
+  <!-- Column Headers -->
+  <rect x="0" y="82" width="50" height="32" fill="#F9FAFB" stroke="#EAECF0"/>
+  <rect x="50" y="82" width="180" height="32" fill="#F9FAFB" stroke="#EAECF0"/>
+  <text x="120" y="103" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#475467">A (Hạng mục)</text>
+  <rect x="230" y="82" width="180" height="32" fill="#F9FAFB" stroke="#EAECF0"/>
+  <text x="290" y="103" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#475467">B (Tháng 07)</text>
+  <rect x="410" y="82" width="180" height="32" fill="#F9FAFB" stroke="#EAECF0"/>
+  <text x="470" y="103" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#475467">C (Tháng 08)</text>
+  <rect x="590" y="82" width="210" height="32" fill="#F9FAFB" stroke="#EAECF0"/>
+  <text x="660" y="103" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#475467">D (Dự báo Q3)</text>
+  
+  <!-- Rows -->
+  <!-- Row 1 -->
+  <rect x="0" y="114" width="50" height="36" fill="#F9FAFB" stroke="#EAECF0"/>
+  <text x="20" y="137" font-family="system-ui, sans-serif" font-size="12" fill="#667085">1</text>
+  <rect x="50" y="114" width="180" height="36" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="64" y="137" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#101828">Doanh số dịch vụ web</text>
+  <rect x="230" y="114" width="180" height="36" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="244" y="137" font-family="system-ui, sans-serif" font-size="12" fill="#344054">145,000,000 ₫</text>
+  <rect x="410" y="114" width="180" height="36" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="424" y="137" font-family="system-ui, sans-serif" font-size="12" fill="#344054">182,500,000 ₫</text>
+  <rect x="590" y="114" width="210" height="36" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="604" y="137" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#027A48">210,000,000 ₫</text>
+  
+  <!-- Row 2 (Active editing by collaborator) -->
+  <rect x="0" y="150" width="50" height="36" fill="#F9FAFB" stroke="#EAECF0"/>
+  <text x="20" y="173" font-family="system-ui, sans-serif" font-size="12" fill="#667085">2</text>
+  <rect x="50" y="150" width="180" height="36" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="64" y="173" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#101828">Hợp đồng bảo trì hệ thống</text>
+  <rect x="230" y="150" width="180" height="36" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="244" y="173" font-family="system-ui, sans-serif" font-size="12" fill="#344054">48,000,000 ₫</text>
+  
+  <!-- Selected Cell with Cursor -->
+  <rect x="410" y="150" width="180" height="36" fill="#EFF8FF" stroke="#465FFF" stroke-width="2"/>
+  <text x="424" y="173" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#175CD3">52,000,000 ₫</text>
+  <rect x="566" y="142" width="52" height="18" rx="4" fill="#465FFF"/>
+  <text x="572" y="155" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#FFFFFF">Tuấn Đang sửa</text>
+  
+  <rect x="590" y="150" width="210" height="36" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="604" y="173" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#027A48">60,000,000 ₫</text>
+  
+  <!-- Row 3 -->
+  <rect x="0" y="186" width="50" height="36" fill="#F9FAFB" stroke="#EAECF0"/>
+  <text x="20" y="209" font-family="system-ui, sans-serif" font-size="12" fill="#667085">3</text>
+  <rect x="50" y="186" width="180" height="36" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="64" y="209" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#101828">Giải pháp AI &amp; Automation</text>
+  <rect x="230" y="186" width="180" height="36" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="244" y="209" font-family="system-ui, sans-serif" font-size="12" fill="#344054">35,000,000 ₫</text>
+  <rect x="410" y="186" width="180" height="36" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="424" y="209" font-family="system-ui, sans-serif" font-size="12" fill="#344054">78,000,000 ₫</text>
+  <rect x="590" y="186" width="210" height="36" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="604" y="209" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#027A48">95,000,000 ₫</text>
+  
+  <!-- Summary Box -->
+  <g transform="translate(36, 320)">
+    <rect width="728" height="130" rx="10" fill="#F9FAFB" stroke="#EAECF0"/>
+    <text x="24" y="34" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#101828">Đặc điểm kỹ thuật chính</text>
+    <text x="24" y="62" font-family="system-ui, sans-serif" font-size="12" fill="#475467">• Đồng bộ dữ liệu ô tức thời với WebSockets và Conflict Resolution</text>
+    <text x="24" y="86" font-family="system-ui, sans-serif" font-size="12" fill="#475467">• Phân quyền khóa cột tài chính và quản lý lịch sử sửa đổi chi tiết theo từng người dùng</text>
+    <text x="24" y="110" font-family="system-ui, sans-serif" font-size="12" fill="#475467">• Hỗ trợ xuất dữ liệu sang chuẩn Excel (.xlsx) nguyên bản và tích hợp API doanh nghiệp</text>
+  </g>
+</svg>

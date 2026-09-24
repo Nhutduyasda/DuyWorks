@@ -1,0 +1,76 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="12" fill="#FFFFFF"/>
+  <rect x="0.5" y="0.5" width="799" height="499" rx="11.5" stroke="#EAECF0"/>
+  
+  <!-- Window Header -->
+  <rect width="800" height="42" rx="12 12 0 0" fill="#F9FAFB"/>
+  <line x1="0" y1="42" x2="800" y2="42" stroke="#EAECF0"/>
+  <circle cx="24" cy="21" r="5" fill="#F04438"/>
+  <circle cx="40" cy="21" r="5" fill="#F79009"/>
+  <circle cx="56" cy="21" r="5" fill="#12B76A"/>
+  <text x="76" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#344054">Hệ Thống Quản Lý Chấm Công &amp; Nhân Sự Nội Bộ [Doanh Nghiệp]</text>
+  
+  <!-- App Body -->
+  <rect x="0" y="42" width="800" height="458" fill="#F9FAFB"/>
+  
+  <!-- Filter / Subheader -->
+  <rect x="24" y="60" width="752" height="56" rx="10" fill="#FFFFFF" stroke="#EAECF0"/>
+  <text x="44" y="93" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#101828">Bảng chấm công: Kỳ tháng 09/2026</text>
+  <rect x="430" y="74" width="100" height="28" rx="6" fill="#F2F4F7"/>
+  <text x="448" y="92" font-family="system-ui, sans-serif" font-size="12" fill="#344054">Phòng ban: Tất cả</text>
+  <rect x="540" y="74" width="100" height="28" rx="6" fill="#F2F4F7"/>
+  <text x="560" y="92" font-family="system-ui, sans-serif" font-size="12" fill="#344054">Ca: Hành chính</text>
+  <rect x="650" y="74" width="110" height="28" rx="6" fill="#465FFF"/>
+  <text x="668" y="92" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Xuất báo cáo</text>
+  
+  <!-- Table Container -->
+  <g transform="translate(24, 132)">
+    <rect width="752" height="326" rx="10" fill="#FFFFFF" stroke="#EAECF0"/>
+    
+    <!-- Header -->
+    <rect width="752" height="40" rx="10 10 0 0" fill="#F9FAFB"/>
+    <line x1="0" y1="40" x2="752" y2="40" stroke="#EAECF0"/>
+    <text x="24" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#475467">MÃ NV</text>
+    <text x="110" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#475467">HỌ VÀ TÊN</text>
+    <text x="260" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#475467">PHÒNG BAN</text>
+    <text x="390" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#475467">GIỜ VÀO - RA</text>
+    <text x="520" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#475467">TRẠNG THÁI</text>
+    <text x="640" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#475467">TỔNG CÔNG</text>
+    
+    <!-- Row 1 -->
+    <line x1="0" y1="94" x2="752" y2="94" stroke="#F2F4F7"/>
+    <text x="24" y="72" font-family="system-ui, sans-serif" font-size="12" fill="#667085">NV-1082</text>
+    <text x="110" y="72" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#101828">Nguyễn Văn An</text>
+    <text x="260" y="72" font-family="system-ui, sans-serif" font-size="12" fill="#344054">Kỹ thuật</text>
+    <text x="390" y="72" font-family="system-ui, sans-serif" font-size="12" fill="#344054">08:02 — 17:31</text>
+    <rect x="520" y="58" width="86" height="22" rx="11" fill="#ECFDF3"/>
+    <text x="532" y="73" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#027A48">Đúng giờ</text>
+    <text x="640" y="72" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#101828">22.0 ngày</text>
+    
+    <!-- Row 2 -->
+    <line x1="0" y1="148" x2="752" y2="148" stroke="#F2F4F7"/>
+    <text x="24" y="126" font-family="system-ui, sans-serif" font-size="12" fill="#667085">NV-1094</text>
+    <text x="110" y="126" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#101828">Trần Thị Mai</text>
+    <text x="260" y="126" font-family="system-ui, sans-serif" font-size="12" fill="#344054">Kinh doanh</text>
+    <text x="390" y="126" font-family="system-ui, sans-serif" font-size="12" fill="#344054">08:15 — 17:30</text>
+    <rect x="520" y="112" width="86" height="22" rx="11" fill="#FFFAEB"/>
+    <text x="530" y="127" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#B54708">Muộn 15p</text>
+    <text x="640" y="126" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#101828">21.5 ngày</text>
+    
+    <!-- Row 3 -->
+    <line x1="0" y1="202" x2="752" y2="202" stroke="#F2F4F7"/>
+    <text x="24" y="180" font-family="system-ui, sans-serif" font-size="12" fill="#667085">NV-1102</text>
+    <text x="110" y="180" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#101828">Lê Hoàng Nam</text>
+    <text x="260" y="180" font-family="system-ui, sans-serif" font-size="12" fill="#344054">Vận hành</text>
+    <text x="390" y="180" font-family="system-ui, sans-serif" font-size="12" fill="#344054">08:00 — 17:35</text>
+    <rect x="520" y="166" width="86" height="22" rx="11" fill="#ECFDF3"/>
+    <text x="532" y="181" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#027A48">Đúng giờ</text>
+    <text x="640" y="180" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#101828">22.0 ngày</text>
+    
+    <!-- Summary Row -->
+    <rect y="220" width="752" height="106" rx="0 0 10 10" fill="#F9FAFB"/>
+    <text x="24" y="250" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#475467">QUY TRÌNH DUYỆT TỰ ĐỘNG</text>
+    <text x="24" y="274" font-family="system-ui, sans-serif" font-size="12" fill="#667085">• Tự động đồng bộ log từ máy quét vân tay/khuôn mặt qua API nội bộ</text>
+    <text x="24" y="296" font-family="system-ui, sans-serif" font-size="12" fill="#667085">• Quản lý đơn nghỉ phép, công tác và tăng ca trực tuyến có xác nhận 2 cấp</text>
+  </g>
+</svg>
