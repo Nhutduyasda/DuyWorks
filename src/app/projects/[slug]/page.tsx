@@ -86,7 +86,7 @@ export default async function ProjectDetailPage({
         <div className="overflow-hidden rounded-2xl bg-white border border-[#EAECF0] shadow-sm mb-12">
           <Image
             src={project.image}
-            alt={`Ảnh chụp giao diện ${project.name}`}
+            alt={`Minh họa giao diện ${project.name}`}
             width={1200}
             height={750}
             className="w-full h-auto object-cover"
@@ -151,7 +151,7 @@ export default async function ProjectDetailPage({
             {project.qualitativeOutcome && (
               <div className="p-6 bg-white rounded-xl border border-[#EAECF0]">
                 <h3 className="text-sm font-bold uppercase tracking-wider text-[#101828] mb-3">
-                  Hiệu quả thực tế
+                  Hướng giải quyết
                 </h3>
                 <p className="text-sm text-[#475467] leading-relaxed">
                   {project.qualitativeOutcome}
@@ -186,7 +186,7 @@ export default async function ProjectDetailPage({
                 Nhắn tin trao đổi ý tưởng và bài toán thực tế của bạn.
               </p>
               <a
-                href={siteConfig.links.zalo}
+                href={siteConfig.links.zalo || "/contact"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full px-4 py-2.5 text-xs font-bold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-lg shadow-xs transition-colors"

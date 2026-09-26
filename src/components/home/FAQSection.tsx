@@ -58,7 +58,7 @@ export function FAQSection() {
                     {item.id === "faq-5" && (
                       <div className="mt-4 pt-3 border-t border-[#F2F4F7]">
                         <a
-                          href={siteConfig.links.zalo}
+                          href={siteConfig.links.zalo || "/contact"}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-2 text-sm font-semibold text-[#465FFF] hover:text-[#3648E0]"

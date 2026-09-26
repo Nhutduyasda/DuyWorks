@@ -6,7 +6,7 @@ import { MessageCircle, CheckCircle2, ArrowRight } from "lucide-react";
 export const metadata = {
   title: "Giới thiệu",
   description:
-    "Tìm hiểu về phong cách làm việc, kinh nghiệm phát triển phần mềm và nguyên tắc cộng tác của DuyDev.",
+    "Tìm hiểu về phong cách làm việc, kinh nghiệm phát triển phần mềm và nguyên tắc cộng tác của DuyWorks.",
 };
 
 export default function AboutPage() {
@@ -33,9 +33,8 @@ export default function AboutPage() {
           <div className="p-6 sm:p-8 bg-white rounded-xl border border-[#EAECF0] space-y-3">
             <h2 className="text-lg font-bold text-[#101828]">Sản phẩm tôi xây dựng</h2>
             <p className="text-sm text-[#475467] leading-relaxed">
-              Tôi tập trung vào các website tốc độ cao, web app có nghiệp vụ phân
-              quyền, công cụ số hóa quy trình và tích hợp các module AI giúp loại
-              bỏ công việc thủ công lặp đi lặp lại.
+              Tôi tập trung vào các website có cấu trúc rõ ràng, web app có nghiệp vụ phân
+              quyền, công cụ số hóa quy trình và tích hợp các module AI hỗ trợ giảm thao tác thủ công lặp đi lặp lại.
             </p>
           </div>
 
@@ -44,7 +43,7 @@ export default function AboutPage() {
             <p className="text-sm text-[#475467] leading-relaxed">
               Ưu tiên tính hữu dụng và ổn định trên thực tế. Một phần mềm thành
               công không phải là phần mềm có nhiều hiệu ứng nhất, mà là phần mềm
-              giúp người dùng hoàn thành công việc nhanh nhất.
+              giúp người dùng hoàn thành công việc thuận tiện hơn.
             </p>
           </div>
         </div>
@@ -59,15 +58,15 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#465FFF]" />
-              <span>Bàn giao 100% mã nguồn sạch</span>
+              <span>Thống nhất phạm vi bàn giao mã nguồn</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#465FFF]" />
-              <span>Demo tiến độ thực tế theo tuần</span>
+              <span>Demo theo các mốc đã thống nhất</span>
             </div>
             <div className="flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#465FFF]" />
-              <span>Hỗ trợ bảo hành kỹ thuật sau bàn giao</span>
+              <span>Trao đổi phương án hỗ trợ sau bàn giao</span>
             </div>
           </div>
         </div>
@@ -79,12 +78,12 @@ export default function AboutPage() {
               Cùng thảo luận về dự án của bạn
             </h3>
             <p className="text-sm text-[#3538CD]">
-              Sẵn sàng lắng nghe và tư vấn hướng giải quyết phù hợp nhất.
+              Sẵn sàng lắng nghe và tư vấn hướng giải quyết phù hợp.
             </p>
           </div>
           <div className="flex items-center gap-3">
             <a
-              href={siteConfig.links.zalo}
+              href={siteConfig.links.zalo || "/contact"}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors"

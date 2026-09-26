@@ -2,79 +2,30 @@
 
 ## Phase
 
-**Phase 1 — Foundation & Home**
+**Phase 1.1 — Brand, Content Integrity & Deployment Readiness**
 
 ## Status
 
-**READY FOR OWNER REVIEW**
-
----
+**READY FOR DEPLOYMENT REVIEW**
 
 ## Objective
 
-Create the project visual foundation and finish the Home page to production-quality standard.
+Prepare the existing public website for owner review before its first deployment. No deployment or Phase 2 approval is implied.
 
----
+## Completed Scope
 
-## Current Scope
+- Public brand standardized as DuyWorks; metadata URL is configured with `NEXT_PUBLIC_SITE_URL`.
+- Contact and social links use optional environment configuration; missing details do not produce fake outbound links.
+- Project and service descriptions reviewed for unsupported guarantees and invented quantitative claims.
+- Package identity, README, `.env.example`, and validation CI updated.
+- Lint, typecheck, build and route review are required validation gates.
 
-Allowed:
+## Scope Drift Recorded
 
-- global styles
-- navigation
-- reusable UI primitives
-- Home sections
-- project/service sample data
-- footer
-- Zalo CTA
-- responsive layout
-- accessibility improvements
-- minimal route placeholders to avoid broken navigation
+Phase 1 originally allowed only minimal placeholder routes beyond Home. The repository already contained substantial implementations of `/services`, `/services/[slug]`, `/projects`, `/projects/[slug]`, `/about`, and `/contact` before Phase 1.1. These pages remain as an existing baseline, without treating future roadmap phases as completed. Their public copy and project facts still require owner approval before publication.
 
-Not allowed yet:
+Future Phase 2 should inspect the existing Services pages and complete missing requirements from `PHASE_02_SERVICES.md`, including any service FAQ or related project references, rather than rebuilding the pages. Phase 2 is **not completed or active**.
 
-- full Services pages
-- full Project case studies
-- full About implementation
-- full Contact implementation
-- backend
-- CMS
-- authentication
-- database
-- admin dashboard
+## Deployment Review Gate
 
----
-
-## Completion Criteria
-
-Phase 1 is complete only when:
-
-- Home is visually polished
-- responsive checks pass
-- lint passes
-- typecheck passes
-- production build passes
-- Zalo CTA works with placeholder configuration
-- navigation contains no broken route
-- visual language is stable enough for future pages
-- no fake testimonials or fake business claims exist
-
----
-
-## Owner Approval Gate
-
-Do not move to Phase 2 without explicit approval from the project owner.
-
----
-
-## Progress Notes
-
-- Phase 1 implementation completed:
-  - Global styles and design tokens (TailAdmin/BizSpace calm palette) set up in `globals.css`.
-  - Responsive sticky Header with mobile drawer navigation created.
-  - Complete Home page with 11 mandatory sections in exact order (Hero, CapabilityBar, Services, FeaturedProjects, WhyWorkWithMe, Process, TechStack, FeaturedCaseStudy, WorkingPrinciples, FAQ, FinalCTA).
-  - Floating Zalo CTA (desktop button + mobile responsive action) configured with `NEXT_PUBLIC_ZALO_URL`.
-  - Externalized data models and architecture for services (`src/data/services.ts`), projects (`src/data/projects.ts`), and site configuration (`src/config/site.ts`).
-  - Professional vector UI mockups generated for hero and project showcases.
-  - Minimal placeholder routes created for `/services`, `/services/[slug]`, `/projects`, `/projects/[slug]`, `/about`, `/contact`, and `not-found`.
-  - Typecheck (`npm run typecheck`), lint (`npm run lint`), and production build (`npm run build`) all executed and passing with 0 errors.
+Before deployment, the owner must confirm published project details and provide a real deployment origin and desired public contact channels in Vercel environment variables. Verify rendered pages, contact links, responsive widths, and browser console in the target environment. Do not advance to Phase 2 without explicit owner approval.

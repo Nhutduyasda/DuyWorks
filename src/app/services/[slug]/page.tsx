@@ -120,7 +120,7 @@ export default async function ServiceDetailPage({
               </p>
             </div>
             <a
-              href={siteConfig.links.zalo}
+              href={siteConfig.links.zalo || "/contact"}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors"

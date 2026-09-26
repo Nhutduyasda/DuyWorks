@@ -8,7 +8,7 @@
   <circle cx="24" cy="21" r="5" fill="#F04438"/>
   <circle cx="40" cy="21" r="5" fill="#F79009"/>
   <circle cx="56" cy="21" r="5" fill="#12B76A"/>
-  <text x="76" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#344054">DuyDev — Technology Service Website &amp; Portfolio</text>
+  <text x="76" y="25" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#344054">DuyWorks — Technology Service Website &amp; Portfolio</text>
   
   <!-- App Body -->
   <rect x="0" y="42" width="800" height="458" fill="#F9FAFB"/>
@@ -16,7 +16,7 @@
   <!-- Mini Header -->
   <rect x="36" y="60" width="728" height="44" rx="8" fill="#FFFFFF" stroke="#EAECF0"/>
   <circle cx="60" cy="82" r="8" fill="#465FFF"/>
-  <text x="76" y="86" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#101828">DuyDev</text>
+  <text x="76" y="86" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#101828">DuyWorks</text>
   <text x="440" y="86" font-family="system-ui, sans-serif" font-size="12" fill="#667085">Dịch vụ</text>
   <text x="500" y="86" font-family="system-ui, sans-serif" font-size="12" fill="#667085">Dự án</text>
   <text x="555" y="86" font-family="system-ui, sans-serif" font-size="12" fill="#667085">Giới thiệu</text>

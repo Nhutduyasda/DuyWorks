@@ -5,18 +5,18 @@ export const servicesData: Service[] = [
     slug: "website-landing-page",
     title: "Website & Landing Page",
     description:
-      "Website doanh nghiệp, portfolio, giới thiệu sản phẩm và landing page marketing với hiệu năng cao, tối ưu chuẩn SEO và hiển thị mượt mà trên mọi thiết bị.",
+      "Website doanh nghiệp, portfolio, giới thiệu sản phẩm và landing page marketing với bố cục rõ ràng, nền tảng SEO và giao diện phù hợp nhiều kích thước màn hình.",
     icon: "Layout",
     capabilities: [
       "Responsive đa thiết bị",
-      "Landing page chuyển đổi cao",
+      "Landing page tập trung vào trải nghiệm người dùng và CTA",
       "Website doanh nghiệp & thương hiệu",
-      "Tối ưu tốc độ tải trang & SEO",
+      "Chú ý hiệu năng và SEO cơ bản",
     ],
     deliverables: [
       "Giao diện hiện đại, sạch sẽ và nhất quán",
-      "Mã nguồn tối ưu, tải nhanh",
-      "Chuẩn SEO On-page và thẻ mạng xã hội",
+      "Mã nguồn có cấu trúc dễ bảo trì",
+      "Thiết lập metadata và thẻ chia sẻ mạng xã hội",
       "Hướng dẫn quản trị và cập nhật nội dung",
     ],
     targetAudience:
@@ -30,7 +30,7 @@ export const servicesData: Service[] = [
     icon: "Layers",
     capabilities: [
       "Xác thực & phân quyền bảo mật",
-      "Xử lý dữ liệu thời gian thực",
+      "Đồng bộ dữ liệu theo nhu cầu nghiệp vụ",
       "Quy trình nghiệp vụ tùy biến",
       "Tích hợp API bên thứ ba",
     ],
@@ -53,10 +53,10 @@ export const servicesData: Service[] = [
       "Công cụ quản trị nội bộ (Internal Tools)",
       "Quản lý đơn hàng & tồn kho",
       "Báo cáo & thống kê nghiệp vụ",
-      "Giảm thiểu sai sót thủ công",
+      "Hỗ trợ kiểm tra và đối soát dữ liệu",
     ],
     deliverables: [
-      "Phần mềm chạy ổn định theo quy trình riêng của bạn",
+      "Phần mềm được xây dựng theo quy trình đã thống nhất",
       "Phân quyền nhân sự chi tiết",
       "Sao lưu và bảo mật dữ liệu nội bộ",
       "Bàn giao trọn gói mã nguồn",
@@ -77,10 +77,10 @@ export const servicesData: Service[] = [
       "Bot hỗ trợ trả lời và phân loại thông tin",
     ],
     deliverables: [
-      "Quy trình tự động hóa hoạt động chính xác",
+      "Quy trình tự động hóa có bước kiểm tra kết quả",
       "Giảm thời gian thao tác nhập liệu thủ công",
-      "Tích hợp an toàn không rò rỉ dữ liệu nhạy cảm",
-      "Tối ưu chi phí token API hàng tháng",
+      "Xem xét quyền truy cập và cách xử lý dữ liệu nhạy cảm",
+      "Theo dõi và điều chỉnh mức sử dụng API",
     ],
     targetAudience:
       "Doanh nghiệp muốn tăng tốc quy trình xử lý văn bản, chứng từ hoặc muốn đưa tính năng thông minh vào sản phẩm.",
