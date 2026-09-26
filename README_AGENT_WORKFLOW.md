@@ -1,4 +1,4 @@
-# DuyDev Agent Workflow Pack
+# DuyWorks Agent Workflow Pack
 
 This package is intended to be copied into the root of the website repository.
 

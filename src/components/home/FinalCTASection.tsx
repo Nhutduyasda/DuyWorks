@@ -1,6 +1,6 @@
+import { ZaloContactLink } from "@/components/shared/ZaloContactLink";
 import React from "react";
 import Link from "next/link";
-import { siteConfig } from "@/config/site";
 import { MessageCircle, ArrowRight } from "lucide-react";
 
 export function FinalCTASection() {
@@ -20,15 +20,12 @@ export function FinalCTASection() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-              <a
-                href={siteConfig.links.zalo || "/contact"}
-                target="_blank"
-                rel="noopener noreferrer"
+              <ZaloContactLink
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-bold text-[#101828] bg-white hover:bg-[#F9FAFB] rounded-xl shadow-xs transition-colors"
               >
                 <MessageCircle className="w-4 h-4 text-[#465FFF]" />
                 <span>Trao đổi qua Zalo</span>
-              </a>
+              </ZaloContactLink>
 
               <Link
                 href="/projects"

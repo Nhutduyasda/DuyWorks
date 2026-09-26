@@ -53,7 +53,7 @@ export default function ContactPage() {
             </div>
 
             <a
-              href={siteConfig.links.zalo || "/contact"}
+              href={siteConfig.links.zalo}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors"

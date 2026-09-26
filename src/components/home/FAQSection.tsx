@@ -1,8 +1,9 @@
 "use client";
 
+import { ZaloContactLink } from "@/components/shared/ZaloContactLink";
+
 import React, { useState } from "react";
 import { faqData } from "@/data/home";
-import { siteConfig } from "@/config/site";
 import { ChevronDown, MessageCircle } from "lucide-react";
 
 export function FAQSection() {
@@ -57,15 +58,12 @@ export function FAQSection() {
                     <p>{item.answer}</p>
                     {item.id === "faq-5" && (
                       <div className="mt-4 pt-3 border-t border-[#F2F4F7]">
-                        <a
-                          href={siteConfig.links.zalo || "/contact"}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <ZaloContactLink
                           className="inline-flex items-center gap-2 text-sm font-semibold text-[#465FFF] hover:text-[#3648E0]"
                         >
                           <MessageCircle className="w-4 h-4" />
                           <span>Nhắn tin Zalo trực tiếp ngay bây giờ →</span>
-                        </a>
+                        </ZaloContactLink>
                       </div>
                     )}
                   </div>

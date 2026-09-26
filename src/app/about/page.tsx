@@ -1,6 +1,6 @@
+import { ZaloContactLink } from "@/components/shared/ZaloContactLink";
 import React from "react";
 import Link from "next/link";
-import { siteConfig } from "@/config/site";
 import { MessageCircle, CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata = {
@@ -82,15 +82,12 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="flex items-center gap-3">
-            <a
-              href={siteConfig.links.zalo || "/contact"}
-              target="_blank"
-              rel="noopener noreferrer"
+            <ZaloContactLink
               className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors"
             >
               <MessageCircle className="w-4 h-4" />
               <span>Trao đổi qua Zalo</span>
-            </a>
+            </ZaloContactLink>
             <Link
               href="/projects"
               className="inline-flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium text-[#344054] bg-white border border-[#D0D5DD] rounded-xl hover:bg-[#F9FAFB] transition-colors"

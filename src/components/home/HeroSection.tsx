@@ -1,3 +1,4 @@
+import { ZaloContactLink } from "@/components/shared/ZaloContactLink";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -36,15 +37,12 @@ export function HeroSection() {
                 <span>Xem dự án đã thực hiện</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
-              <a
-                href={siteConfig.links.zalo || "/contact"}
-                target="_blank"
-                rel="noopener noreferrer"
+              <ZaloContactLink
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-[#344054] bg-white hover:bg-[#F9FAFB] border border-[#D0D5DD] rounded-xl shadow-xs transition-colors"
               >
                 <MessageCircle className="w-4 h-4 text-[#465FFF]" />
                 <span>Trao đổi qua Zalo</span>
-              </a>
+              </ZaloContactLink>
             </div>
 
             {/* 3 Trust Chips */}

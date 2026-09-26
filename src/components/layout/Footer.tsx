@@ -26,7 +26,7 @@ export function Footer() {
             <div className="flex items-center gap-3 pt-2">
               {siteConfig.links.zalo && (
               <a
-                href={siteConfig.links.zalo || "/contact"}
+                href={siteConfig.links.zalo}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg border border-[#EAECF0] flex items-center justify-center text-[#475467] hover:text-[#465FFF] hover:border-[#465FFF] transition-colors"

@@ -19,6 +19,7 @@ Prepare the existing public website for owner review before its first deployment
 - Project and service descriptions reviewed for unsupported guarantees and invented quantitative claims.
 - Package identity, README, `.env.example`, and validation CI updated.
 - Lint, typecheck, build and route review are required validation gates.
+- Final agent README brand cleanup and Zalo fallback navigation corrected; validation passed.
 
 ## Scope Drift Recorded
 

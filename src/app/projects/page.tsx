@@ -1,10 +1,11 @@
 "use client";
 
+import { ZaloContactLink } from "@/components/shared/ZaloContactLink";
+
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { projectsData } from "@/data/projects";
-import { siteConfig } from "@/config/site";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
 const categories = [
@@ -132,15 +133,12 @@ export default function ProjectsPage() {
           <p className="text-base font-semibold text-[#101828]">
             Bạn cần một sản phẩm tương tự cho doanh nghiệp của mình?
           </p>
-          <a
-            href={siteConfig.links.zalo || "/contact"}
-            target="_blank"
-            rel="noopener noreferrer"
+          <ZaloContactLink
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors"
           >
             <MessageCircle className="w-4 h-4" />
             <span>Trao đổi yêu cầu qua Zalo</span>
-          </a>
+          </ZaloContactLink>
         </div>
       </div>
     </div>

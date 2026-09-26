@@ -1,5 +1,7 @@
 "use client";
 
+import { ZaloContactLink } from "@/components/shared/ZaloContactLink";
+
 import React, { useState } from "react";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
@@ -42,15 +44,12 @@ export function Header() {
 
           {/* Desktop Primary CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <a
-              href={siteConfig.links.zalo || "/contact"}
-              target="_blank"
-              rel="noopener noreferrer"
+            <ZaloContactLink
               className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]"
             >
               <MessageCircle className="w-4 h-4" />
               <span>Trao đổi qua Zalo</span>
-            </a>
+            </ZaloContactLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,16 +87,13 @@ export function Header() {
             ))}
           </nav>
           <div className="pt-2">
-            <a
-              href={siteConfig.links.zalo || "/contact"}
-              target="_blank"
-              rel="noopener noreferrer"
+            <ZaloContactLink
               onClick={() => setIsMobileMenuOpen(false)}
               className="flex items-center justify-center gap-2 w-full px-4 py-3 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors"
             >
               <MessageCircle className="w-4 h-4" />
               <span>Trao đổi qua Zalo</span>
-            </a>
+            </ZaloContactLink>
           </div>
         </div>
       )}

@@ -1,7 +1,7 @@
+import { ZaloContactLink } from "@/components/shared/ZaloContactLink";
 import React from "react";
 import Link from "next/link";
 import { servicesData } from "@/data/services";
-import { siteConfig } from "@/config/site";
 import { Layout, Layers, Briefcase, Cpu, ArrowRight, MessageCircle } from "lucide-react";
 
 export const metadata = {
@@ -78,14 +78,11 @@ export default function ServicesPage() {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
 
-                <a
-                  href={siteConfig.links.zalo || "/contact"}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <ZaloContactLink
                   className="text-xs font-medium text-[#667085] hover:text-[#101828]"
                 >
                   Liên hệ trao đổi
-                </a>
+                </ZaloContactLink>
               </div>
             </div>
           ))}
@@ -96,15 +93,12 @@ export default function ServicesPage() {
           <p className="text-sm text-[#475467]">
             Bạn cần một giải pháp tùy biến theo quy trình riêng?
           </p>
-          <a
-            href={siteConfig.links.zalo || "/contact"}
-            target="_blank"
-            rel="noopener noreferrer"
+          <ZaloContactLink
             className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors"
           >
             <MessageCircle className="w-4 h-4" />
             <span>Trao đổi yêu cầu qua Zalo</span>
-          </a>
+          </ZaloContactLink>
         </div>
       </div>
     </div>

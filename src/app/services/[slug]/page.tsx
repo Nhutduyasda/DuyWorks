@@ -1,8 +1,8 @@
+import { ZaloContactLink } from "@/components/shared/ZaloContactLink";
 import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { servicesData } from "@/data/services";
-import { siteConfig } from "@/config/site";
 import { ArrowLeft, Check, MessageCircle } from "lucide-react";
 
 interface ServiceDetailPageProps {
@@ -119,15 +119,12 @@ export default async function ServiceDetailPage({
                 Trao đổi yêu cầu cụ thể để nhận tư vấn kiến trúc kỹ thuật.
               </p>
             </div>
-            <a
-              href={siteConfig.links.zalo || "/contact"}
-              target="_blank"
-              rel="noopener noreferrer"
+            <ZaloContactLink
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors"
             >
               <MessageCircle className="w-4 h-4" />
               <span>Trao đổi qua Zalo</span>
-            </a>
+            </ZaloContactLink>
           </div>
         </div>
       </div>
