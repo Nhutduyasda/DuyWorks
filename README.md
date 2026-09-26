@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DuyWorks
 
-## Getting Started
+DuyWorks là website giới thiệu dịch vụ phát triển website, ứng dụng web, phần mềm quản lý và AI/automation của một lập trình viên độc lập. Trang trình bày năng lực, dự án và kênh liên hệ cho khách hàng tiềm năng. Nội dung dự án cần được đối chiếu với sản phẩm thực trước khi công bố.
 
-First, run the development server:
+## Công nghệ
+
+Next.js App Router, React, TypeScript, Tailwind CSS và Lucide React. Mục tiêu triển khai: Vercel. Không có backend liên hệ hay cơ sở dữ liệu trong website này.
+
+## Cấu trúc
+
+- `src/app/`: các route công khai và metadata.
+- `src/components/`: layout, section Home và UI dùng chung.
+- `src/config/site.ts`: brand, URL và kênh liên hệ.
+- `src/data/`: nội dung dịch vụ, dự án và Home.
+- `public/images/projects/`: hình minh họa dự án.
+- `docs/agent/` và `docs/roadmap/`: workflow, quy tắc, checklist và roadmap.
+
+## Chạy cục bộ
+
+Cần Node.js 20 và npm. Sao chép `.env.example` thành `.env.local`, sau đó:
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Mở `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Biến môi trường
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Biến | Công dụng |
+| --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Origin dùng cho metadata; cục bộ mặc định `http://localhost:3000`. |
+| `NEXT_PUBLIC_ZALO_URL` | URL Zalo hợp lệ; nếu thiếu, CTA dẫn đến `/contact` hoặc ẩn trên trang liên hệ. |
+| `NEXT_PUBLIC_GITHUB_URL` | Hồ sơ GitHub; link ẩn nếu thiếu. |
+| `NEXT_PUBLIC_LINKEDIN_URL` | Hồ sơ LinkedIn; link ẩn nếu thiếu. |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | Email liên hệ; link ẩn nếu thiếu. |
 
-## Learn More
+Các biến `NEXT_PUBLIC_` được đưa vào bản build phía client: chỉ điền thông tin công khai, không đặt secret. Đặt URL và kênh liên hệ thật trong cấu hình môi trường Vercel trước khi build production.
 
-To learn more about Next.js, take a look at the following resources:
+## Script
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run dev`: chạy cục bộ.
+- `npm run lint`: ESLint.
+- `npm run typecheck`: TypeScript.
+- `npm run build`: build production.
+- `npm run start`: chạy bản đã build.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Agent workflow và roadmap
 
-## Deploy on Vercel
+Đọc `AGENTS.md` và các tài liệu bắt buộc theo đúng thứ tự được chỉ định trước khi sửa code. Phạm vi hiện tại nằm trong `docs/roadmap/CURRENT_PHASE.md`; các phase tiếp theo trong `docs/roadmap/ROADMAP.md`. Chạy checklist `docs/agent/QA_CHECKLIST.md` trước khi báo hoàn thành.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Triển khai
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Chưa có production domain được xác nhận. Khi chuẩn bị triển khai trên Vercel, cấu hình `NEXT_PUBLIC_SITE_URL` bằng origin thực tế và kiểm tra lại tất cả kênh liên hệ, nội dung dự án, metadata và CI. Workflow CI chỉ kiểm tra chất lượng code, không triển khai website.

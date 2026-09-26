@@ -24,8 +24,9 @@ export function Footer() {
               {siteConfig.description}
             </p>
             <div className="flex items-center gap-3 pt-2">
+              {siteConfig.links.zalo && (
               <a
-                href={siteConfig.links.zalo}
+                href={siteConfig.links.zalo || "/contact"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg border border-[#EAECF0] flex items-center justify-center text-[#475467] hover:text-[#465FFF] hover:border-[#465FFF] transition-colors"
@@ -33,6 +34,8 @@ export function Footer() {
               >
                 <MessageCircle className="w-4 h-4" />
               </a>
+              )}
+              {siteConfig.links.email && (
               <a
                 href={`mailto:${siteConfig.links.email}`}
                 className="w-9 h-9 rounded-lg border border-[#EAECF0] flex items-center justify-center text-[#475467] hover:text-[#465FFF] hover:border-[#465FFF] transition-colors"
@@ -40,6 +43,8 @@ export function Footer() {
               >
                 <Mail className="w-4 h-4" />
               </a>
+              )}
+              {siteConfig.links.github && (
               <a
                 href={siteConfig.links.github}
                 target="_blank"
@@ -49,6 +54,8 @@ export function Footer() {
               >
                 <GithubIcon className="w-4 h-4" />
               </a>
+              )}
+              {siteConfig.links.linkedin && (
               <a
                 href={siteConfig.links.linkedin}
                 target="_blank"
@@ -58,6 +65,7 @@ export function Footer() {
               >
                 <LinkedinIcon className="w-4 h-4" />
               </a>
+              )}
             </div>
           </div>
 
@@ -87,8 +95,8 @@ export function Footer() {
             </h3>
             <div className="space-y-2.5 text-sm text-[#667085]">
               <p>Hỗ trợ tư vấn giải pháp kỹ thuật, triển khai website &amp; phần mềm.</p>
-              <p className="font-medium text-[#101828]">Zalo: Trao đổi nhanh</p>
-              <p>Email: {siteConfig.links.email}</p>
+              {siteConfig.links.zalo && <p className="font-medium text-[#101828]">Zalo: Trao đổi nhanh</p>}
+              {siteConfig.links.email && <p>Email: {siteConfig.links.email}</p>}
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ export function Header() {
           <Link
             href="/"
             className="flex items-center gap-2.5 font-bold text-lg sm:text-xl text-[#101828] hover:text-[#465FFF] transition-colors"
-            aria-label="Trang chủ DuyDev"
+            aria-label={`Trang chủ ${siteConfig.name}`}
           >
             <span className="w-9 h-9 rounded-xl bg-[#465FFF] flex items-center justify-center text-white shadow-xs">
               <Code className="w-5 h-5" />
@@ -43,7 +43,7 @@ export function Header() {
           {/* Desktop Primary CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href={siteConfig.links.zalo}
+              href={siteConfig.links.zalo || "/contact"}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]"
@@ -89,7 +89,7 @@ export function Header() {
           </nav>
           <div className="pt-2">
             <a
-              href={siteConfig.links.zalo}
+              href={siteConfig.links.zalo || "/contact"}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}

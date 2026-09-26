@@ -3,13 +3,12 @@ import { siteConfig } from "@/config/site";
 import { MessageCircle } from "lucide-react";
 
 export function FloatingZaloCTA() {
-  const zaloUrl =
-    process.env.NEXT_PUBLIC_ZALO_URL || siteConfig.links.zalo;
+  if (!siteConfig.links.zalo) return null;
 
   return (
     <div className="fixed bottom-5 right-5 z-50 flex items-center print:hidden">
       <a
-        href={zaloUrl}
+        href={siteConfig.links.zalo}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Trao đổi công việc qua Zalo"

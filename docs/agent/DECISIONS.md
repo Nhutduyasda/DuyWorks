@@ -101,3 +101,27 @@ Explain why the decision exists.
 **Impact:**
 
 Optional explanation of what this changes.
+
+## DEC-006 — Pre-deployment identity and contact configuration
+
+**Date:** 2026-09-26
+
+**Decision:**
+
+DuyWorks is the public brand. Site origin and public contact channels are environment-based; optional channels without verified values are hidden on the contact page and footer. Other Zalo CTAs point to `/contact` until Zalo is configured.
+
+**Reason:**
+
+The production domain and owner contact details have not yet been supplied; publishing sample values would misdirect visitors.
+
+## DEC-007 — Existing public routes retained as baseline
+
+**Date:** 2026-09-26
+
+**Decision:**
+
+The implemented Services, Projects, About, and Contact routes remain in place. Their existence does not mark Phases 2–4 complete.
+
+**Reason:**
+
+The Phase 1 implementation exceeded the placeholder route scope. Future phases should inspect and refine the existing pages against their own acceptance criteria.

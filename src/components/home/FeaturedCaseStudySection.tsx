@@ -6,9 +6,9 @@ import { ArrowRight, Check } from "lucide-react";
 export function FeaturedCaseStudySection() {
   const highlights = [
     "Xác thực người dùng & phân quyền bảo mật qua Supabase Auth",
-    "Thẻ từ vựng tương tác theo chủ đề kèm phát âm chuẩn",
-    "Hệ thống tính điểm kinh nghiệm (XP) & chuỗi ngày học tạo động lực",
-    "Triển khai tối ưu trên Vercel Edge Network với tốc độ tải trang dưới 1 giây",
+    "Bài học theo chủ đề và theo dõi tiến độ",
+    "Hệ thống tính điểm kinh nghiệm (XP) khi hoàn thành bài học",
+    "Triển khai ứng dụng web với Next.js và Supabase",
   ];
 
   return (

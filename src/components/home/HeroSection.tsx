@@ -37,7 +37,7 @@ export function HeroSection() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href={siteConfig.links.zalo}
+                href={siteConfig.links.zalo || "/contact"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-[#344054] bg-white hover:bg-[#F9FAFB] border border-[#D0D5DD] rounded-xl shadow-xs transition-colors"

@@ -21,14 +21,18 @@ export default function ContactPage() {
             Cùng trao đổi về ý tưởng của bạn
           </h1>
           <p className="text-base text-[#475467] leading-relaxed">
-            Bạn có thể nhắn tin trực tiếp qua Zalo để nhận phản hồi nhanh nhất,
-            hoặc gửi email nếu cần đính kèm tài liệu mô tả chi tiết.
+            Chọn kênh liên hệ được hiển thị bên dưới để trao đổi về yêu cầu của bạn.
           </p>
         </div>
+
+        {!siteConfig.links.zalo && !siteConfig.links.email && (
+          <p className="text-sm text-[#475467]">Thông tin liên hệ đang được cập nhật.</p>
+        )}
 
         {/* Contact Methods Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {/* Primary: Zalo */}
+          {siteConfig.links.zalo && (
           <div className="p-6 sm:p-8 bg-white rounded-2xl border-2 border-[#465FFF] shadow-xs flex flex-col justify-between space-y-6">
             <div className="space-y-3">
               <div className="w-12 h-12 rounded-xl bg-[#EEF2FF] flex items-center justify-center text-[#465FFF]">
@@ -49,7 +53,7 @@ export default function ContactPage() {
             </div>
 
             <a
-              href={siteConfig.links.zalo}
+              href={siteConfig.links.zalo || "/contact"}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors"
@@ -58,8 +62,10 @@ export default function ContactPage() {
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
+          )}
 
           {/* Secondary: Email */}
+          {siteConfig.links.email && (
           <div className="p-6 sm:p-8 bg-white rounded-2xl border border-[#EAECF0] hover:border-[#D0D5DD] shadow-2xs flex flex-col justify-between space-y-6">
             <div className="space-y-3">
               <div className="w-12 h-12 rounded-xl bg-[#F9FAFB] border border-[#EAECF0] flex items-center justify-center text-[#344054]">
@@ -87,14 +93,17 @@ export default function ContactPage() {
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
+          )}
         </div>
 
         {/* Social / Code Channels */}
+        {(siteConfig.links.github || siteConfig.links.linkedin) && (
         <div className="p-6 sm:p-8 bg-white rounded-xl border border-[#EAECF0]">
           <h2 className="text-base font-bold text-[#101828] mb-4">
             Kênh cộng đồng &amp; Hồ sơ mã nguồn
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {siteConfig.links.github && (
             <a
               href={siteConfig.links.github}
               target="_blank"
@@ -109,7 +118,9 @@ export default function ContactPage() {
               </div>
               <ArrowUpRight className="w-4 h-4 text-[#667085]" />
             </a>
+            )}
 
+            {siteConfig.links.linkedin && (
             <a
               href={siteConfig.links.linkedin}
               target="_blank"
@@ -124,8 +135,10 @@ export default function ContactPage() {
               </div>
               <ArrowUpRight className="w-4 h-4 text-[#667085]" />
             </a>
+            )}
           </div>
         </div>
+        )}
       </div>
     </div>
   );

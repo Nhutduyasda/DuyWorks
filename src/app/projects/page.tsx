@@ -133,7 +133,7 @@ export default function ProjectsPage() {
             Bạn cần một sản phẩm tương tự cho doanh nghiệp của mình?
           </p>
           <a
-            href={siteConfig.links.zalo}
+            href={siteConfig.links.zalo || "/contact"}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors"
