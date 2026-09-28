@@ -41,5 +41,4 @@ export const siteConfig = {
     { label: "Giới thiệu", href: "/about" },
     { label: "Liên hệ", href: "/contact" },
   ],
-  trustChips: ["Website hiện đại", "Responsive", "Hỗ trợ sau bàn giao"],
 };

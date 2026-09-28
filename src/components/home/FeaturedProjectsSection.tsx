@@ -1,138 +1,50 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { projectsData } from "@/data/projects";
 import { ArrowRight } from "lucide-react";
 
 export function FeaturedProjectsSection() {
-  const featuredProjects = projectsData.filter((p) => p.featured).slice(0, 3);
+  const projects = projectsData.filter((project) => project.featured).slice(0, 3);
+  const [featured, ...others] = projects;
 
   return (
-    <section id="projects" className="py-16 sm:py-24 bg-white border-b border-[#EAECF0]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-4">
-          <div className="max-w-2xl text-left">
-            <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#465FFF] mb-2">
-              Dự án thực tế
-            </p>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[#101828]">
-              Một số dự án đã thực hiện
-            </h2>
-            <p className="mt-3 text-base text-[#475467] leading-relaxed">
-              Những sản phẩm được phát triển từ nhu cầu thực tế, từ website đến hệ
-              thống nghiệp vụ.
-            </p>
+    <section id="projects" className="bg-white pb-20 pt-8 sm:pb-28 sm:pt-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-10 flex flex-col justify-between gap-4 sm:mb-12 md:flex-row md:items-end">
+          <div className="max-w-2xl">
+            <p className="mb-3 text-sm font-semibold text-[#465FFF]">Dự án nổi bật</p>
+            <h2 className="text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl">Một số sản phẩm tôi đã thực hiện</h2>
+            <p className="mt-4 text-base leading-relaxed text-[#475467]">Xem sản phẩm và cách tôi giải quyết những bài toán thực tế.</p>
           </div>
-
-          <Link
-            href="/projects"
-            className="hidden md:inline-flex items-center gap-2 text-sm font-semibold text-[#465FFF] hover:text-[#3648E0] transition-colors"
-          >
-            <span>Xem tất cả dự án</span>
-            <ArrowRight className="w-4 h-4" />
+          <Link href="/projects" className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-[#465FFF] hover:text-[#3648E0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]">
+            Xem tất cả dự án <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
-
-        {/* Large Project Cards */}
-        <div className="space-y-12 sm:space-y-16">
-          {featuredProjects.map((project, index) => {
-            const isReversed = index % 2 === 1;
-
-            return (
-              <div
-                key={project.slug}
-                className="group p-4 sm:p-6 lg:p-8 bg-[#F9FAFB] rounded-2xl border border-[#EAECF0] hover:border-[#D0D5DD] transition-all duration-200"
-              >
-                <div
-                  className={`grid grid-cols-1 lg:grid-cols-12 gap-8 items-center ${
-                    isReversed ? "lg:flex-row-reverse" : ""
-                  }`}
-                >
-                  {/* Image Showcase Column */}
-                  <div
-                    className={`lg:col-span-7 ${
-                      isReversed ? "lg:order-2" : "lg:order-1"
-                    }`}
-                  >
-                    <Link
-                      href={`/projects/${project.slug}`}
-                      className="block overflow-hidden rounded-xl bg-white border border-[#EAECF0] shadow-2xs group-hover:shadow-xs transition-shadow"
-                    >
-                      <Image
-                        src={project.image}
-                        alt={`Ảnh mô phỏng giao diện ${project.name}`}
-                        width={800}
-                        height={500}
-                        className="w-full h-auto object-cover transform group-hover:scale-[1.01] transition-transform duration-300"
-                      />
-                    </Link>
-                  </div>
-
-                  {/* Metadata Column */}
-                  <div
-                    className={`lg:col-span-5 space-y-4 sm:space-y-5 text-left ${
-                      isReversed ? "lg:order-1" : "lg:order-2"
-                    }`}
-                  >
-                    <div className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-[#EEF2FF] text-[#465FFF]">
-                      {project.category}
-                    </div>
-
-                    <h3 className="text-xl sm:text-2xl font-bold text-[#101828]">
-                      {project.name}
-                    </h3>
-
-                    <p className="text-sm sm:text-base text-[#475467] leading-relaxed">
-                      {project.shortDescription}
-                    </p>
-
-                    {/* Qualitative Outcome */}
-                    {project.qualitativeOutcome && (
-                      <div className="p-3.5 rounded-lg bg-white border border-[#EAECF0] text-xs sm:text-sm text-[#344054]">
-                        <span className="font-semibold text-[#101828]">Kết quả: </span>
-                        {project.qualitativeOutcome}
-                      </div>
-                    )}
-
-                    {/* Tech Stack Pills */}
-                    <div className="flex flex-wrap gap-1.5 pt-1">
-                      {project.technologies.map((tech) => (
-                        <span
-                          key={tech}
-                          className="px-2.5 py-0.5 rounded text-xs font-medium bg-white text-[#475467] border border-[#EAECF0]"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-
-                    {/* CTA Link */}
-                    <div className="pt-2">
-                      <Link
-                        href={`/projects/${project.slug}`}
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-[#465FFF] group-hover:text-[#3648E0] transition-colors"
-                      >
-                        <span>Xem Case Study</span>
-                        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Mobile View All Link */}
-        <div className="mt-10 text-center md:hidden">
-          <Link
-            href="/projects"
-            className="inline-flex items-center justify-center gap-2 w-full px-5 py-3 text-sm font-semibold text-[#344054] bg-white border border-[#D0D5DD] rounded-xl hover:bg-[#F9FAFB] transition-colors"
-          >
-            <span>Xem tất cả dự án</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
+        {featured && (
+          <article className="group grid items-center gap-6 lg:grid-cols-[1.35fr_1fr] lg:gap-10">
+            <Link href={`/projects/${featured.slug}`} aria-label={`Xem dự án ${featured.name}`} className="block overflow-hidden rounded-xl bg-[#F9FAFB] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]">
+              <Image src={featured.image} alt={`Hình minh họa giao diện dự án ${featured.name}`} width={800} height={500} className="h-auto w-full transition-transform duration-200 group-hover:scale-[1.01]" />
+            </Link>
+            <div>
+              <p className="text-sm text-[#667085]">{featured.category}</p>
+              <h3 className="mt-2 text-2xl font-bold text-[#101828] sm:text-3xl">{featured.name}</h3>
+              <p className="mt-3 max-w-lg text-base leading-relaxed text-[#475467]">{featured.shortDescription}</p>
+              <p className="mt-4 text-sm text-[#667085]">{featured.technologies.slice(0, 3).join(" · ")}</p>
+              <Link href={`/projects/${featured.slug}`} className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#465FFF] hover:text-[#3648E0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]">Xem dự án <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+            </div>
+          </article>
+        )}
+        <div className="mt-12 grid gap-10 sm:mt-16 md:grid-cols-2 md:gap-8">
+          {others.map((project) => (
+            <article key={project.slug} className="group">
+              <Link href={`/projects/${project.slug}`} aria-label={`Xem dự án ${project.name}`} className="block overflow-hidden rounded-xl bg-[#F9FAFB] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]">
+                <Image src={project.image} alt={`Hình minh họa giao diện dự án ${project.name}`} width={800} height={500} className="h-auto w-full transition-transform duration-200 group-hover:scale-[1.01]" />
+              </Link>
+              <h3 className="mt-5 text-xl font-bold text-[#101828] sm:text-2xl">{project.name}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[#475467] sm:text-base">{project.shortDescription}</p>
+              <Link href={`/projects/${project.slug}`} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#465FFF] hover:text-[#3648E0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]">Xem dự án <ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+            </article>
+          ))}
         </div>
       </div>
     </section>

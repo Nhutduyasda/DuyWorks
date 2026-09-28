@@ -1,63 +1,21 @@
-import React from "react";
 import { techStackGroupsData } from "@/data/home";
-import { Monitor, Server, Database, Cloud } from "lucide-react";
-
-const groupIcons: Record<string, React.ReactNode> = {
-  Frontend: <Monitor className="w-5 h-5 text-[#465FFF]" />,
-  Backend: <Server className="w-5 h-5 text-[#465FFF]" />,
-  Database: <Database className="w-5 h-5 text-[#465FFF]" />,
-  "Deployment & Tools": <Cloud className="w-5 h-5 text-[#465FFF]" />,
-};
 
 export function TechStackSection() {
   return (
-    <section className="py-16 sm:py-24 bg-[#F9FAFB] border-b border-[#EAECF0]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="max-w-2xl text-left mb-12 sm:mb-16">
-          <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#465FFF] mb-2">
-            Công nghệ cốt lõi
-          </p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-[#101828]">
-            Công nghệ tôi thường sử dụng
-          </h2>
-          <p className="mt-3 text-base text-[#475467] leading-relaxed">
-            Lựa chọn công nghệ hiện đại, có cộng đồng lớn, ổn định cao và sẵn sàng
-            mở rộng theo quy mô người dùng.
-          </p>
+    <section className="bg-white py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_1.5fr] lg:gap-16 lg:px-8">
+        <div>
+          <h2 className="text-2xl font-bold tracking-tight text-[#101828] sm:text-3xl">Công nghệ thường sử dụng</h2>
+          <p className="mt-3 max-w-md text-sm leading-relaxed text-[#667085] sm:text-base">Lựa chọn công cụ phù hợp với từng sản phẩm.</p>
         </div>
-
-        {/* 4 Groups Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <dl className="grid gap-5 sm:gap-6">
           {techStackGroupsData.map((group) => (
-            <div
-              key={group.category}
-              className="p-6 bg-white rounded-xl border border-[#EAECF0] hover:border-[#D0D5DD] shadow-2xs transition-all duration-200"
-            >
-              <div className="w-10 h-10 rounded-lg bg-[#EEF2FF] flex items-center justify-center mb-4">
-                {groupIcons[group.category] || (
-                  <Monitor className="w-5 h-5 text-[#465FFF]" />
-                )}
-              </div>
-
-              <h3 className="text-base font-bold text-[#101828] mb-4">
-                {group.category}
-              </h3>
-
-              <div className="space-y-2">
-                {group.items.map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-2 text-sm text-[#344054] py-1 px-2.5 rounded-md bg-[#F9FAFB] border border-[#EAECF0]"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#465FFF]" />
-                    <span className="font-medium">{item}</span>
-                  </div>
-                ))}
-              </div>
+            <div key={group.category} className="grid gap-1 sm:grid-cols-[8rem_1fr] sm:gap-5">
+              <dt className="text-sm font-semibold text-[#101828]">{group.category}</dt>
+              <dd className="text-sm leading-relaxed text-[#475467] sm:text-base">{group.items.join(" · ")}</dd>
             </div>
           ))}
-        </div>
+        </dl>
       </div>
     </section>
   );

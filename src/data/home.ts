@@ -1,160 +1,37 @@
-import { ProcessStep, TechStackGroup, ValueProp, WorkingPrinciple, FAQItem } from "@/types";
+import { ProcessStep, TechStackGroup, ValueProp } from "@/types";
 
-export const capabilityTags = [
-  "Web Development",
-  "Internal Software",
-  "AI Integration",
-  "Automation",
-  "Next.js",
-  "React",
-  "ASP.NET Core",
-  "Supabase",
-  "SQL Server",
-  "Vercel",
-];
+export const homeServiceDescriptions: Record<string, string> = {
+  "website-landing-page": "Website doanh nghiệp, landing page và trang giới thiệu sản phẩm.",
+  "web-application": "Ứng dụng web phục vụ người dùng và quy trình nghiệp vụ riêng.",
+  "phan-mem-quan-ly": "Công cụ quản lý nội bộ cho cửa hàng và doanh nghiệp.",
+  "ai-automation": "Tích hợp AI và tự động hóa các tác vụ lặp lại.",
+};
 
 export const valuePropsData: ValueProp[] = [
   {
-    title: "Tập trung vào sản phẩm có thể sử dụng",
-    description:
-      "Thiết kế dựa trên workflow và nhu cầu thực tế thay vì chỉ làm giao diện hình thức. Ưu tiên tính năng gắn với mục tiêu sử dụng cụ thể.",
-    icon: "Target",
+    title: "Tập trung vào bài toán thực tế",
+    description: "Ưu tiên quy trình và nhu cầu sử dụng thực tế.",
   },
   {
     title: "Giao tiếp rõ ràng",
-    description:
-      "Yêu cầu, phạm vi công việc (scope) và mốc tiến độ bàn giao được thống nhất cụ thể ngay từ đầu, cập nhật thường xuyên trong suốt quá trình phát triển.",
-    icon: "MessageSquare",
+    description: "Phạm vi, tiến độ và thay đổi được trao đổi minh bạch.",
   },
   {
-    title: "Dễ phát triển tiếp",
-    description:
-      "Mã nguồn được tổ chức theo cấu trúc module rõ ràng, component có tính tái sử dụng cao và ghi chú khi cần để bạn hoặc lập trình viên khác dễ dàng mở rộng.",
-    icon: "Code2",
-  },
-  {
-    title: "Hỗ trợ sau bàn giao",
-    description:
-      "Đồng hành hỗ trợ vận hành, trao đổi phương án khắc phục lỗi và hỗ trợ nâng cấp khi nhu cầu kinh doanh của bạn thay đổi.",
-    icon: "ShieldCheck",
+    title: "Có thể phát triển tiếp",
+    description: "Mã nguồn được tổ chức để bảo trì và mở rộng.",
   },
 ];
 
 export const processStepsData: ProcessStep[] = [
-  {
-    step: "01",
-    title: "Trao đổi yêu cầu",
-    description:
-      "Lắng nghe bài toán của bạn, tìm hiểu mục tiêu thực tế và xác định cụ thể những tính năng thực sự cần thiết.",
-  },
-  {
-    step: "02",
-    title: "Phân tích & đề xuất giải pháp",
-    description:
-      "Lựa chọn công nghệ phù hợp ngân sách, phác thảo kiến trúc hệ thống và đưa ra kế hoạch triển khai minh bạch.",
-  },
-  {
-    step: "03",
-    title: "Thiết kế giao diện",
-    description:
-      "Xây dựng layout trực quan, hiện đại, chú ý trải nghiệm người dùng trên cả điện thoại và máy tính.",
-  },
-  {
-    step: "04",
-    title: "Phát triển sản phẩm",
-    description:
-      "Tổ chức mã nguồn rõ ràng, tích hợp cơ sở dữ liệu và các module chức năng theo từng giai đoạn.",
-  },
-  {
-    step: "05",
-    title: "Kiểm thử & bàn giao",
-    description:
-      "Kiểm tra tính ổn định, tốc độ và bảo mật; hướng dẫn sử dụng chi tiết và bàn giao mã nguồn theo phạm vi đã thống nhất.",
-  },
-  {
-    step: "06",
-    title: "Hỗ trợ sau triển khai",
-    description:
-      "Trao đổi phạm vi hỗ trợ kỹ thuật và nâng cấp khi cần thêm chức năng mới.",
-  },
+  { step: "01", title: "Trao đổi yêu cầu" },
+  { step: "02", title: "Đề xuất giải pháp" },
+  { step: "03", title: "Phát triển & demo" },
+  { step: "04", title: "Bàn giao & hỗ trợ" },
 ];
 
 export const techStackGroupsData: TechStackGroup[] = [
-  {
-    category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    category: "Backend",
-    items: ["ASP.NET Core", "Node.js"],
-  },
-  {
-    category: "Database",
-    items: ["SQL Server", "PostgreSQL", "Supabase"],
-  },
-  {
-    category: "Deployment & Tools",
-    items: ["Vercel", "Docker", "GitHub"],
-  },
-];
-
-export const workingPrinciplesData: WorkingPrinciple[] = [
-  {
-    title: "Trao đổi yêu cầu rõ ràng",
-    description:
-      "Mọi chức năng đều được làm rõ mục đích sử dụng trước khi triển khai, tránh hiểu nhầm gây lãng phí thời gian và ngân sách.",
-  },
-  {
-    title: "Demo theo từng giai đoạn",
-    description:
-      "Bạn có thể xem sản phẩm chạy thực tế theo từng mốc công việc, không phải chờ đến phút cuối mới biết hình thù phần mềm.",
-  },
-  {
-    title: "Không phát triển ngoài scope khi chưa thống nhất",
-    description:
-      "Mọi thay đổi phát sinh ngoài thỏa thuận ban đầu đều được trao đổi trước về tác động thời gian và chi phí.",
-  },
-  {
-    title: "Bàn giao đầy đủ mã nguồn",
-    description:
-      "Phạm vi bàn giao mã nguồn và tài liệu được thống nhất trước khi triển khai.",
-  },
-  {
-    title: "Có thể tiếp tục hỗ trợ và phát triển",
-    description:
-      "Mối quan hệ làm việc không kết thúc sau khi bàn giao; có thể trao đổi về bảo trì hoặc nâng cấp phiên bản tiếp theo.",
-  },
-];
-
-export const faqData: FAQItem[] = [
-  {
-    id: "faq-1",
-    question: "Bạn có nhận website nhỏ không?",
-    answer:
-      "Có. Tôi nhận phát triển từ các trang giới thiệu đơn giản, landing page bán hàng cho đến các hệ thống quản lý chuyên sâu. Bất kể quy mô, tôi chú ý đến trải nghiệm sử dụng và tính thẩm mỹ của từng sản phẩm.",
-  },
-  {
-    id: "faq-2",
-    question: "Có thể chỉnh sửa website có sẵn không?",
-    answer:
-      "Có thể. Tôi sẽ cùng bạn kiểm tra mã nguồn và kiến trúc hiện tại để đánh giá xem việc viết tiếp hay nâng cấp từng phần sẽ hiệu quả hơn cho bạn về chi phí và thời gian.",
-  },
-  {
-    id: "faq-3",
-    question: "Tôi mới chỉ có ý tưởng, chưa có thiết kế thì sao?",
-    answer:
-      "Rất nhiều dự án bắt đầu từ một ý tưởng trên giấy. Tôi sẽ lắng nghe quy trình của bạn, tư vấn bố cục trải nghiệm và trực tiếp thiết kế giao diện phù hợp với nhu cầu sử dụng thực tế.",
-  },
-  {
-    id: "faq-4",
-    question: "Sau khi bàn giao có hỗ trợ không?",
-    answer:
-      "Phạm vi hỗ trợ kỹ thuật sau bàn giao sẽ được trao đổi theo từng dự án.",
-  },
-  {
-    id: "faq-5",
-    question: "Làm sao để trao đổi yêu cầu?",
-    answer:
-      "Cách thuận tiện nhất là nhắn tin trực tiếp qua Zalo. Bạn chỉ cần gửi mô tả ngắn về điều bạn muốn làm, tôi sẽ xem xét yêu cầu và cùng bạn thảo luận giải pháp phù hợp.",
-  },
+  { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
+  { category: "Backend", items: ["ASP.NET Core", "Node.js"] },
+  { category: "Data", items: ["SQL Server", "PostgreSQL", "Supabase"] },
+  { category: "Tools", items: ["Vercel", "Docker", "GitHub"] },
 ];

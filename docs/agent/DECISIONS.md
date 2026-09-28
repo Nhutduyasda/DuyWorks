@@ -125,3 +125,15 @@ The implemented Services, Projects, About, and Contact routes remain in place. T
 **Reason:**
 
 The Phase 1 implementation exceeded the placeholder route scope. Future phases should inspect and refine the existing pages against their own acceptance criteria.
+
+## DEC-008 — Visual Simplification
+
+**Date:** 2026-09-28
+
+**Decision:**
+
+Home uses fewer sections and visual containers. The separate Featured Case Study is absorbed into Selected Work, Working Principles and Process into How I Work, and the Capability Bar is removed. Technology becomes a text list and the process has four steps.
+
+**Reason:**
+
+Reduce cognitive load and give the offer, project imagery and contact action clear visual priority.
