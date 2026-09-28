@@ -137,3 +137,15 @@ Home uses fewer sections and visual containers. The separate Featured Case Study
 **Reason:**
 
 Reduce cognitive load and give the offer, project imagery and contact action clear visual priority.
+
+## DEC-009 — Services organized around client problems
+
+**Date:** 2026-09-28
+
+**Decision:**
+
+The four Services pages lead with situations and use cases that non-technical visitors can recognize. A shared four-step process and service-specific FAQs live in service data; related projects are stored as slugs and resolved from `projectsData`. A service without a matching project omits that section.
+
+**Reason:**
+
+Visitors need to choose a solution from their problem, and project evidence must use a single source of truth rather than fabricated examples.

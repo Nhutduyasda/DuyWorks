@@ -2,7 +2,7 @@
 
 ## Phase
 
-**Phase 1.2 — Visual Hierarchy & Simplification**
+**Phase 2 — Services Completion & Conversion UX**
 
 ## Status
 
@@ -10,12 +10,12 @@
 
 ## Objective
 
-Simplify the deployed Home page so visitors can see the offer, selected work and next action quickly. The active scope and acceptance criteria are in `PHASE_01_2_VISUAL_HIERARCHY.md`.
+Complete the existing Services listing and detail pages around visitor problems, relevant work and clear Zalo contact. Follow `PHASE_02_SERVICES.md` and the Phase 1.2 visual simplification rules.
 
-## Context
+## Baseline
 
-Phase 1.1 completed deployment readiness. Owner review of the deployed Home identified excessive section density, cards and borders. Existing Services, Projects, About and Contact routes remain outside this Home refinement; their presence does not complete future roadmap phases.
+Phase 1.2 is merged into `main`; `/services` and `/services/[slug]` already render and serve as the starting point. Their presence alone does not complete Phase 2.
 
 ## Review Gate
 
-The six-section Home and repository checks are complete. Owner review should verify visual rhythm and mobile widths on the preview; this execution environment could not open its local server in the browser. Do not advance to Phase 2 or deploy production as part of this task.
+All five Services routes and the invalid-slug 404 were checked; `npm ci`, lint, typecheck and build passed. Owner should verify visual layout at 375, 430, 768, 1024 and 1440 pixels in the preview; local browser access is restricted in this environment. Do not advance to Phase 3 before owner review.
