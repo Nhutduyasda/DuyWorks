@@ -23,7 +23,7 @@ export const projectsData: Project[] = [
     ],
     technologies: ["ASP.NET Core", "React", "TypeScript", "SendGrid API", "AI Integration"],
     image: "/images/projects/testify.svg",
-    imageAlt: "Minh họa Testify với test case, theo dõi lỗi, quy trình QA và AI hỗ trợ kiểm thử",
+    imageAlt: "Minh họa Testify: bảng Scrumban với tác vụ liên kết test case, lỗi và AI hỗ trợ tạo test case",
     featured: true,
     liveUrl: "https://www.testify.pics/",
     qualitativeOutcome:
