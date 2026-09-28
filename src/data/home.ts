@@ -1,12 +1,5 @@
 import { ProcessStep, TechStackGroup, ValueProp } from "@/types";
 
-export const homeServiceDescriptions: Record<string, string> = {
-  "website-landing-page": "Website doanh nghiệp, landing page và trang giới thiệu sản phẩm.",
-  "web-application": "Ứng dụng web phục vụ người dùng và quy trình nghiệp vụ riêng.",
-  "phan-mem-quan-ly": "Công cụ quản lý nội bộ cho cửa hàng và doanh nghiệp.",
-  "ai-automation": "Tích hợp AI và tự động hóa các tác vụ lặp lại.",
-};
-
 export const valuePropsData: ValueProp[] = [
   {
     title: "Tập trung vào bài toán thực tế",

@@ -1,11 +1,17 @@
 export interface Service {
   slug: string;
   title: string;
+  shortDescription: string;
   description: string;
   icon: string;
+  suitableWhen: string;
+  decisionPrompt: string;
+  useCases: string[];
   capabilities: string[];
-  deliverables?: string[];
+  deliverables: string[];
   targetAudience?: string;
+  relatedProjectSlugs: string[];
+  faq: { question: string; answer: string }[];
 }
 
 export interface Project {
@@ -19,6 +25,7 @@ export interface Project {
   keyFeatures?: string[];
   technologies: string[];
   image: string;
+  imageAlt?: string;
   featured: boolean;
   qualitativeOutcome?: string;
   liveUrl?: string;

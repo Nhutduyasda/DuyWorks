@@ -1,110 +1,30 @@
-# Phase 2 — Services
+# Phase 2 — Services Completion & Conversion UX
+
+## Existing baseline
+
+The Phase 1 repository already contains `/services`, `/services/[slug]`, four services in `src/data/services.ts`, static slug generation, `notFound()`, and the shared Zalo link. Phase 2 improves these pages rather than rebuilding the routing or global layout. Phase 1.2's restrained typography, spacing, cards and accent usage remain the visual baseline.
 
 ## Goal
 
-Build the complete public services experience.
-
-Visitors should understand what problems can be solved, what each service includes, and how to start a conversation through Zalo.
-
----
+A visitor with little technical knowledge can identify the right service, understand the problem addressed and scope of work, inspect relevant existing projects, then contact through Zalo.
 
 ## Scope
 
-Implement:
-
-- `/services`
-- `/services/[slug]`
-- service data model
-- service cards
-- service detail layout
-- related projects
-- service FAQ
-- Zalo conversion CTA
-
----
-
-## Services Listing
-
-The main `/services` page should include:
-
-- clear hero
-- service categories
-- concise descriptions
-- capability examples
-- CTA
-- selected related projects
-- FAQ or process summary
-
-Avoid fake package pricing unless real pricing is later supplied.
-
----
-
-## Service Detail
-
-Each `/services/[slug]` should include:
-
-1. Breadcrumb
-2. Service hero
-3. Problems / use cases
-4. What is included
-5. Typical deliverables
-6. Development approach
-7. Related project(s)
-8. FAQ
-9. Zalo CTA
-
----
-
-## Initial Services
-
-- Website & Landing Page
-- Web Application
-- Phần mềm quản lý
-- AI & Automation
-
----
-
-## Data Architecture
-
-Service content should live in:
-
-`src/data/services.ts`
-
-Suggested type fields:
-
-- slug
-- title
-- shortDescription
-- description
-- icon
-- capabilities
-- useCases
-- deliverables
-- relatedProjectSlugs
-- faq
-
----
+- Four existing services with short descriptions, problem-oriented use cases, deliverables, a shared four-step process and distinct FAQs.
+- Listing with four concise cards, a text-based decision guide, compact related work and a final CTA.
+- Detail pages with open hero, use cases, capabilities, deliverables, process, actual related projects where relevant, FAQ and contextual CTA.
+- Project references resolved by slug from `src/data/projects.ts`. No invented AI project.
+- Testify added as owner-provided project proof for Web Application and AI & Automation. Its public landing page was inspected; the private app was not. The original SVG is an illustrative preview, not a verified screenshot. The existing Projects route and category filter remain generic.
+- Preserve static params, invalid-slug 404, meaningful metadata and Zalo fallback.
 
 ## Constraints
 
-Do not add:
+No pricing packages, promises of guaranteed outcomes, new backend, Home redesign, fabricated case studies, nested card walls, or new dependencies. Avoid jargon; explain AI/OCR review needs and conditional deliverables.
 
-- pricing calculator
-- checkout
-- cart
-- payment
-- CRM lead capture backend
+## Acceptance
 
-unless explicitly approved.
-
----
-
-## Acceptance Criteria
-
-- services are understandable to non-technical visitors
-- routes work
-- no duplicate service copy is spread across JSX
-- visual language matches Phase 1
-- Zalo CTA is visible
-- responsive behavior passes
-- lint/typecheck/build pass
+- All four detail routes and listing build; invalid slug returns 404.
+- One H1 per page, accessible FAQ disclosure, links and image alt text.
+- No overloaded capability pills; each page has a clear primary contact action.
+- Review at 375, 430, 768, 1024 and 1440 pixels when browser access allows.
+- `npm ci`, lint, typecheck and build pass; owner reviews before Phase 3.

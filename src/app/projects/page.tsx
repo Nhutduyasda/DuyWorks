@@ -8,13 +8,7 @@ import Link from "next/link";
 import { projectsData } from "@/data/projects";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
-const categories = [
-  "Tất cả",
-  "Learning Platform",
-  "Business Productivity",
-  "Internal Enterprise Software",
-  "Portfolio Website",
-];
+const categories = ["Tất cả", ...new Set(projectsData.map((project) => project.category))];
 
 export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState("Tất cả");
@@ -76,7 +70,7 @@ export default function ProjectsPage() {
                 >
                   <Image
                     src={project.image}
-                    alt={`Giao diện dự án ${project.name}`}
+                    alt={project.imageAlt ?? `Minh họa giao diện dự án ${project.name}`}
                     width={800}
                     height={500}
                     className="w-full h-auto object-cover group-hover:scale-[1.01] transition-transform duration-300"
