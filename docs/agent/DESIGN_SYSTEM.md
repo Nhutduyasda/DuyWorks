@@ -116,6 +116,10 @@ Cards should feel similar to TailAdmin:
 - low shadow
 - clear information hierarchy
 
+Cards are visual emphasis, not the default layout. Use type, spacing and alignment for supporting information. Avoid nested borders and repeated boxed items. Whitespace is intentional; content hierarchy matters more than component density.
+
+Use eyebrow labels sparingly rather than at every section. Reserve the primary blue accent for CTAs, important links and limited icon emphasis.
+
 ---
 
 ## Icons

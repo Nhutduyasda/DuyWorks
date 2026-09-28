@@ -1,77 +1,36 @@
-import { ZaloContactLink } from "@/components/shared/ZaloContactLink";
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { MessageCircle, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ZaloContactLink } from "@/components/shared/ZaloContactLink";
+import { ArrowRight } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden pt-10 pb-16 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-28 border-b border-[#EAECF0] bg-[#F9FAFB]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Left Column: Copy & CTAs */}
-          <div className="lg:col-span-6 space-y-6 sm:space-y-8 text-left">
-            {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#EEF2FF] border border-[#C7D7FE] text-[#465FFF] text-xs sm:text-sm font-semibold tracking-wide">
-              <span className="w-2 h-2 rounded-full bg-[#465FFF]" />
-              <span>{siteConfig.tagline}</span>
-            </div>
-
-            {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#101828] leading-[1.2]">
-              Biến ý tưởng của bạn thành sản phẩm hoạt động thực tế.
-            </h1>
-
-            {/* Supporting Copy */}
-            <p className="text-base sm:text-lg text-[#475467] leading-relaxed max-w-xl">
-              {siteConfig.description}
-            </p>
-
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
-              <Link
-                href="/projects"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-white bg-[#465FFF] hover:bg-[#3648E0] rounded-xl shadow-xs transition-colors"
-              >
-                <span>Xem dự án đã thực hiện</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-              <ZaloContactLink
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-[#344054] bg-white hover:bg-[#F9FAFB] border border-[#D0D5DD] rounded-xl shadow-xs transition-colors"
-              >
-                <MessageCircle className="w-4 h-4 text-[#465FFF]" />
-                <span>Trao đổi qua Zalo</span>
-              </ZaloContactLink>
-            </div>
-
-            {/* 3 Trust Chips */}
-            <div className="pt-4 border-t border-[#EAECF0] flex flex-wrap items-center gap-4 sm:gap-6 text-xs sm:text-sm text-[#475467]">
-              {siteConfig.trustChips.map((chip) => (
-                <div key={chip} className="flex items-center gap-1.5 font-medium">
-                  <CheckCircle2 className="w-4 h-4 text-[#465FFF]" />
-                  <span>{chip}</span>
-                </div>
-              ))}
-            </div>
+    <section className="bg-[#F9FAFB] py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1fr] lg:gap-12 lg:px-8">
+        <div>
+          <p className="mb-5 text-sm font-semibold tracking-wide text-[#465FFF]">
+            {siteConfig.tagline}
+          </p>
+          <h1 className="max-w-2xl text-4xl font-bold leading-[1.16] tracking-tight text-[#101828] sm:text-5xl lg:text-[3.25rem]">
+            Biến ý tưởng của bạn thành sản phẩm hoạt động thực tế.
+          </h1>
+          <p className="mt-6 max-w-xl text-base leading-relaxed text-[#475467] sm:text-lg">
+            Thiết kế website, phần mềm và giải pháp AI phù hợp với nhu cầu sử dụng thực tế.
+          </p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <Link href="/projects" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#465FFF] px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#3648E0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]">
+              Xem dự án <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+            <ZaloContactLink className="inline-flex items-center justify-center rounded-xl border border-[#D0D5DD] bg-white px-6 py-3.5 text-sm font-semibold text-[#344054] transition-colors hover:bg-[#F2F4F7] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]">
+              Trao đổi qua Zalo
+            </ZaloContactLink>
           </div>
-
-          {/* Right Column: High-Fidelity Product Mockup Preview */}
-          <div className="lg:col-span-6">
-            <div className="relative mx-auto rounded-2xl p-2 sm:p-3 bg-white border border-[#EAECF0] shadow-sm">
-              <div className="overflow-hidden rounded-xl bg-[#F9FAFB] border border-[#EAECF0]">
-                <Image
-                  src="/images/projects/hero-preview.svg"
-                  alt="Giao diện phần mềm và hệ thống số hóa quy trình nghiệp vụ"
-                  width={1200}
-                  height={780}
-                  priority
-                  className="w-full h-auto object-cover rounded-lg shadow-inner"
-                />
-              </div>
-            </div>
-          </div>
+          <p className="mt-7 text-sm text-[#667085]">Website · Web App · Internal Software · AI Automation</p>
         </div>
+        <Link href="/projects/zhonglish" aria-label="Xem dự án Zhonglish" className="group block overflow-hidden rounded-xl bg-white shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]">
+          <Image src="/images/projects/zhonglish.svg" alt="Hình minh họa giao diện ứng dụng học tiếng Trung Zhonglish" width={800} height={500} priority className="h-auto w-full transition-transform duration-200 group-hover:scale-[1.01]" />
+        </Link>
       </div>
     </section>
   );

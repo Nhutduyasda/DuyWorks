@@ -2,31 +2,20 @@
 
 ## Phase
 
-**Phase 1.1 — Brand, Content Integrity & Deployment Readiness**
+**Phase 1.2 — Visual Hierarchy & Simplification**
 
 ## Status
 
-**READY FOR DEPLOYMENT REVIEW**
+**READY FOR OWNER REVIEW**
 
 ## Objective
 
-Prepare the existing public website for owner review before its first deployment. No deployment or Phase 2 approval is implied.
+Simplify the deployed Home page so visitors can see the offer, selected work and next action quickly. The active scope and acceptance criteria are in `PHASE_01_2_VISUAL_HIERARCHY.md`.
 
-## Completed Scope
+## Context
 
-- Public brand standardized as DuyWorks; metadata URL is configured with `NEXT_PUBLIC_SITE_URL`.
-- Contact and social links use optional environment configuration; missing details do not produce fake outbound links.
-- Project and service descriptions reviewed for unsupported guarantees and invented quantitative claims.
-- Package identity, README, `.env.example`, and validation CI updated.
-- Lint, typecheck, build and route review are required validation gates.
-- Final agent README brand cleanup and Zalo fallback navigation corrected; validation passed.
+Phase 1.1 completed deployment readiness. Owner review of the deployed Home identified excessive section density, cards and borders. Existing Services, Projects, About and Contact routes remain outside this Home refinement; their presence does not complete future roadmap phases.
 
-## Scope Drift Recorded
+## Review Gate
 
-Phase 1 originally allowed only minimal placeholder routes beyond Home. The repository already contained substantial implementations of `/services`, `/services/[slug]`, `/projects`, `/projects/[slug]`, `/about`, and `/contact` before Phase 1.1. These pages remain as an existing baseline, without treating future roadmap phases as completed. Their public copy and project facts still require owner approval before publication.
-
-Future Phase 2 should inspect the existing Services pages and complete missing requirements from `PHASE_02_SERVICES.md`, including any service FAQ or related project references, rather than rebuilding the pages. Phase 2 is **not completed or active**.
-
-## Deployment Review Gate
-
-Before deployment, the owner must confirm published project details and provide a real deployment origin and desired public contact channels in Vercel environment variables. Verify rendered pages, contact links, responsive widths, and browser console in the target environment. Do not advance to Phase 2 without explicit owner approval.
+The six-section Home and repository checks are complete. Owner review should verify visual rhythm and mobile widths on the preview; this execution environment could not open its local server in the browser. Do not advance to Phase 2 or deploy production as part of this task.
