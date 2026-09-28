@@ -16,6 +16,8 @@ Complete the existing Services listing and detail pages around visitor problems,
 
 Phase 1.2 is merged into `main`; `/services` and `/services/[slug]` already render and serve as the starting point. Their presence alone does not complete Phase 2.
 
+The Testify addendum contributes an owner-provided QA project and maps it to Web Application and AI & Automation without expanding Phase 3 scope.
+
 ## Review Gate
 
 All five Services routes and the invalid-slug 404 were checked; `npm ci`, lint, typecheck and build passed. Owner should verify visual layout at 375, 430, 768, 1024 and 1440 pixels in the preview; local browser access is restricted in this environment. Do not advance to Phase 3 before owner review.

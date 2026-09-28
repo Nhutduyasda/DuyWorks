@@ -94,7 +94,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
             <div className="mt-9 grid gap-10 md:grid-cols-2">
               {relatedProjects.map((project) => (
                 <article key={project.slug}>
-                  <Link href={`/projects/${project.slug}`} aria-label={`Xem dự án ${project.name}`} className="block overflow-hidden rounded-xl bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]"><Image src={project.image} alt={`Hình minh họa giao diện dự án ${project.name}`} width={800} height={500} className="h-auto w-full" /></Link>
+                  <Link href={`/projects/${project.slug}`} aria-label={`Xem dự án ${project.name}`} className="block overflow-hidden rounded-xl bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]"><Image src={project.image} alt={project.imageAlt ?? `Hình minh họa giao diện dự án ${project.name}`} width={800} height={500} className="h-auto w-full" /></Link>
                   <h3 className="mt-5 text-xl font-bold text-[#101828]">{project.name}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-[#475467] sm:text-base">{project.shortDescription}</p>
                   <p className="mt-3 text-sm text-[#667085]">{project.technologies.slice(0, 3).join(" · ")}</p>

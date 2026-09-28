@@ -23,7 +23,7 @@ export function FeaturedProjectsSection() {
         {featured && (
           <article className="group grid items-center gap-6 lg:grid-cols-[1.35fr_1fr] lg:gap-10">
             <Link href={`/projects/${featured.slug}`} aria-label={`Xem dự án ${featured.name}`} className="block overflow-hidden rounded-xl bg-[#F9FAFB] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]">
-              <Image src={featured.image} alt={`Hình minh họa giao diện dự án ${featured.name}`} width={800} height={500} className="h-auto w-full transition-transform duration-200 group-hover:scale-[1.01]" />
+              <Image src={featured.image} alt={featured.imageAlt ?? `Hình minh họa giao diện dự án ${featured.name}`} width={800} height={500} className="h-auto w-full transition-transform duration-200 group-hover:scale-[1.01]" />
             </Link>
             <div>
               <p className="text-sm text-[#667085]">{featured.category}</p>
@@ -38,7 +38,7 @@ export function FeaturedProjectsSection() {
           {others.map((project) => (
             <article key={project.slug} className="group">
               <Link href={`/projects/${project.slug}`} aria-label={`Xem dự án ${project.name}`} className="block overflow-hidden rounded-xl bg-[#F9FAFB] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]">
-                <Image src={project.image} alt={`Hình minh họa giao diện dự án ${project.name}`} width={800} height={500} className="h-auto w-full transition-transform duration-200 group-hover:scale-[1.01]" />
+                <Image src={project.image} alt={project.imageAlt ?? `Hình minh họa giao diện dự án ${project.name}`} width={800} height={500} className="h-auto w-full transition-transform duration-200 group-hover:scale-[1.01]" />
               </Link>
               <h3 className="mt-5 text-xl font-bold text-[#101828] sm:text-2xl">{project.name}</h3>
               <p className="mt-2 text-sm leading-relaxed text-[#475467] sm:text-base">{project.shortDescription}</p>

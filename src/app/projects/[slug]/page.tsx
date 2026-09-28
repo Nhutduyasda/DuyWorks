@@ -70,6 +70,17 @@ export default async function ProjectDetailPage({
             {project.overview || project.shortDescription}
           </p>
 
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#465FFF] hover:text-[#3648E0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]"
+            >
+              Xem sản phẩm <span aria-hidden="true">↗</span>
+            </a>
+          )}
+
           <div className="flex flex-wrap gap-2 pt-2">
             {project.technologies.map((t) => (
               <span
@@ -86,7 +97,7 @@ export default async function ProjectDetailPage({
         <div className="overflow-hidden rounded-2xl bg-white border border-[#EAECF0] shadow-sm mb-12">
           <Image
             src={project.image}
-            alt={`Minh họa giao diện ${project.name}`}
+            alt={project.imageAlt ?? `Minh họa giao diện ${project.name}`}
             width={1200}
             height={750}
             className="w-full h-auto object-cover"

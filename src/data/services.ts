@@ -68,7 +68,7 @@ export const servicesData: Service[] = [
       "Cấu trúc dữ liệu và quyền truy cập phù hợp với phạm vi.",
       "Mã nguồn, cấu hình triển khai và hướng dẫn sử dụng theo thỏa thuận.",
     ],
-    relatedProjectSlugs: ["zhonglish", "collaborative-excel"],
+    relatedProjectSlugs: ["testify", "zhonglish"],
     faq: [
       { question: "Có thể phát triển từ hệ thống đang có không?", answer: "Cần xem mã nguồn, dữ liệu và khả năng tích hợp trước khi đề xuất nâng cấp hoặc xây phần mới." },
       { question: "Có thể phân quyền nhiều nhóm người dùng không?", answer: "Có thể thiết kế quyền truy cập theo vai trò nếu đó là nhu cầu của dự án; phạm vi sẽ được xác định khi phân tích." },
@@ -136,7 +136,7 @@ export const servicesData: Service[] = [
       "Cách theo dõi các trường hợp cần người xem lại.",
       "Tài liệu cấu hình và mức sử dụng dịch vụ bên ngoài theo thỏa thuận.",
     ],
-    relatedProjectSlugs: [],
+    relatedProjectSlugs: ["testify"],
     faq: [
       { question: "OCR có đọc chính xác 100% không?", answer: "Không. Chất lượng tài liệu ảnh hưởng đến kết quả và thông tin quan trọng cần được kiểm tra trước khi sử dụng." },
       { question: "Có cần người kiểm tra kết quả AI không?", answer: "Có thể cần, nhất là khi kết quả liên quan đến chứng từ, quyết định hoặc dữ liệu quan trọng." },

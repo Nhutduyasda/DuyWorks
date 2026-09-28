@@ -25,6 +25,7 @@ export interface Project {
   keyFeatures?: string[];
   technologies: string[];
   image: string;
+  imageAlt?: string;
   featured: boolean;
   qualitativeOutcome?: string;
   liveUrl?: string;

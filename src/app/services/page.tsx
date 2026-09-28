@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 const icons = { Layout, Layers, Briefcase, Cpu };
-const relatedWork = projectsData.filter((project) => ["zhonglish", "attendance-management-system"].includes(project.slug));
+const relatedWork = projectsData.filter((project) => ["testify", "zhonglish"].includes(project.slug));
 
 export default function ServicesPage() {
   return (
@@ -76,7 +76,7 @@ export default function ServicesPage() {
             {relatedWork.map((project) => (
               <article key={project.slug}>
                 <Link href={`/projects/${project.slug}`} className="block overflow-hidden rounded-xl bg-[#F9FAFB] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#465FFF]" aria-label={`Xem dự án ${project.name}`}>
-                  <Image src={project.image} alt={`Hình minh họa giao diện dự án ${project.name}`} width={800} height={500} className="h-auto w-full" />
+                  <Image src={project.image} alt={project.imageAlt ?? `Hình minh họa giao diện dự án ${project.name}`} width={800} height={500} className="h-auto w-full" />
                 </Link>
                 <h3 className="mt-4 text-xl font-bold text-[#101828]">{project.name}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#475467]">{project.shortDescription}</p>

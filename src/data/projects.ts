@@ -2,6 +2,34 @@ import { Project } from "@/types";
 
 export const projectsData: Project[] = [
   {
+    slug: "testify",
+    name: "Testify",
+    category: "QA Platform",
+    shortDescription:
+      "Nền tảng quản lý công việc và đảm bảo chất lượng kiểm thử, kết hợp quy trình QA, theo dõi lỗi và AI hỗ trợ tạo test case.",
+    overview:
+      "Testify kết hợp quản lý công việc theo nhóm với quy trình kiểm thử phần mềm, để đội ngũ phát triển và QA theo dõi test case, lỗi và tiến độ dự án trong cùng một hệ thống.",
+    problem:
+      "Khi công việc, test case, báo cáo lỗi và tiến độ kiểm thử nằm ở nhiều công cụ hoặc tài liệu khác nhau, đội ngũ khó theo dõi trạng thái tổng thể và phải chuyển đổi giữa nhiều luồng công việc.",
+    solution:
+      "Xây dựng nền tảng tập trung cho công việc, quy trình QA và theo dõi lỗi, với AI gợi ý test case và thông báo email theo các sự kiện phù hợp.",
+    keyFeatures: [
+      "AI hỗ trợ gợi ý kịch bản kiểm thử từ yêu cầu đầu vào",
+      "Quản lý quy trình và trạng thái thực hiện test case",
+      "Theo dõi lỗi và trạng thái xử lý",
+      "Theo dõi tiến độ công việc và kiểm thử",
+      "Gửi thông báo email qua SendGrid theo sự kiện phù hợp",
+      "Xác thực người dùng để truy cập nền tảng",
+    ],
+    technologies: ["ASP.NET Core", "React", "TypeScript", "SendGrid API", "AI Integration"],
+    image: "/images/projects/testify.svg",
+    imageAlt: "Minh họa Testify với test case, theo dõi lỗi, quy trình QA và AI hỗ trợ kiểm thử",
+    featured: true,
+    liveUrl: "https://www.testify.pics/",
+    qualitativeOutcome:
+      "Tập trung công việc, kiểm thử và theo dõi lỗi trong một quy trình, với AI hỗ trợ chuẩn bị test case để người dùng xem xét.",
+  },
+  {
     slug: "zhonglish",
     name: "Zhonglish",
     category: "Learning Platform",

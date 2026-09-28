@@ -14,6 +14,7 @@ A visitor with little technical knowledge can identify the right service, unders
 - Listing with four concise cards, a text-based decision guide, compact related work and a final CTA.
 - Detail pages with open hero, use cases, capabilities, deliverables, process, actual related projects where relevant, FAQ and contextual CTA.
 - Project references resolved by slug from `src/data/projects.ts`. No invented AI project.
+- Testify added as owner-provided project proof for Web Application and AI & Automation. Its public landing page was inspected; the private app was not. The original SVG is an illustrative preview, not a verified screenshot. The existing Projects route and category filter remain generic.
 - Preserve static params, invalid-slug 404, meaningful metadata and Zalo fallback.
 
 ## Constraints
